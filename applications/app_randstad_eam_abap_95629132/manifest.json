@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP EAM Technical Consultant",
+    "company": "Randstad Digital",
+    "location": "Brisbane QLD, Australia",
+    "url": "https://www.seek.com.au/job/95629132",
+    "seek_id": "95629132"
+  },
+  "slug": "randstad-sap-eam-technical-consultant",
+  "applicationId": "app_randstad_eam_abap_95629132",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_randstad_eam_abap_95629132",
+  "createdAt": "2026-11-03T17:59:03.821Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_randstad_eam_abap_95629132/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_randstad_eam_abap_95629132/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_randstad_eam_abap_95629132/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_randstad_eam_abap_95629132/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_randstad_eam_abap_95629132/checklist.md",
+    "jobDescription": "applications/app_randstad_eam_abap_95629132/job_description.md"
+  }
+}

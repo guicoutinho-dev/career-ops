@@ -1,0 +1,38 @@
+{
+  "job": {
+    "title": "Grain Harvest Work",
+    "company": "Australian Grain Export",
+    "location": "Dublin, SA, Australia",
+    "postcode": "5501",
+    "url": "https://www.seek.com.au/job/95595840",
+    "seek_id": "95595840",
+    "duration": "Immediate through February 2027",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 4 Regional South Australia)"
+  },
+  "slug": "australian-grain-export-grain-harvest",
+  "applicationId": "app_grain_export_95595840",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_grain_export_95595840",
+  "createdAt": "2026-11-01T21:18:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "5501"
+  },
+  "files": {
+    "cvHtml": "applications/app_grain_export_95595840/cv-australian-grain-export-grain-harvest.html",
+    "cvPdf": "applications/app_grain_export_95595840/cv-australian-grain-export-grain-harvest.pdf",
+    "coverLetterHtml": "applications/app_grain_export_95595840/cover-letter-australian-grain-export-grain-harvest.html",
+    "coverLetterPdf": "applications/app_grain_export_95595840/cover-letter-australian-grain-export-grain-harvest.pdf",
+    "answers": "applications/app_grain_export_95595840/answers.json",
+    "checklist": "applications/app_grain_export_95595840/checklist.md",
+    "jobDescription": "applications/app_grain_export_95595840/job_description.md"
+  }
+}

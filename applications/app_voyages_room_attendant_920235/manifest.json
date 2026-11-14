@@ -1,0 +1,31 @@
+{
+  "job": {
+    "title": "Room Attendant",
+    "company": "Voyages Indigenous Tourism Australia (Ayers Rock Resort)",
+    "location": "Yulara NT, Postcode 0872",
+    "postcode": "0872",
+    "req_id": "920235",
+    "url": "https://apply.jobadder.com/17985/920235/i5vrcpbbab3evppunfmpvljnau?site=au6",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "applicationId": "app_voyages_room_attendant_920235",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:56:59.925608",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "0872"
+  },
+  "files": {
+    "cvHtml": "applications/app_voyages_room_attendant_920235/cv-voyages-room-attendant.html",
+    "cvPdf": "applications/app_voyages_room_attendant_920235/cv-voyages-room-attendant.pdf",
+    "coverLetterHtml": "applications/app_voyages_room_attendant_920235/cover-letter-voyages-room-attendant.html",
+    "coverLetterPdf": "applications/app_voyages_room_attendant_920235/cover-letter-voyages-room-attendant.pdf",
+    "submissionProof": "applications/app_voyages_room_attendant_920235/submission_proof.png"
+  }
+}

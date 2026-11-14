@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Orchard Assistant",
+    "company": "Silverfox Management",
+    "location": "Axe Creek VIC 3551",
+    "postcode": "3551",
+    "req_id": "seek_whv_95228030",
+    "url": "https://www.seek.com.au/job/95228030",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant Cultivation)"
+  },
+  "slug": "silverfox-orchard-assistant-axe-creek",
+  "applicationId": "app_silverfox_orchard_assistant_95228030",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_silverfox_orchard_assistant_95228030",
+  "createdAt": "2026-11-02T23:53:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3551"
+  },
+  "files": {
+    "cvHtml": "applications/app_silverfox_orchard_assistant_95228030/cv-gilherme-orchard-assistant.html",
+    "cvPdf": "applications/app_silverfox_orchard_assistant_95228030/cv-gilherme-orchard-assistant.pdf",
+    "coverLetterHtml": "applications/app_silverfox_orchard_assistant_95228030/cover-letter-silverfox-orchard.html",
+    "coverLetterPdf": "applications/app_silverfox_orchard_assistant_95228030/cover-letter-silverfox-orchard.pdf",
+    "jobDescription": "applications/app_silverfox_orchard_assistant_95228030/job_description.md"
+  }
+}

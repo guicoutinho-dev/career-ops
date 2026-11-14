@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Golf Operations Attendant",
+    "company": "Hamilton Island Enterprises",
+    "location": "Hamilton Island, Whitsundays QLD, Postcode 4803",
+    "postcode": "4803",
+    "req_id": "26950",
+    "url": "https://phh.tbe.taleo.net/phh04/ats/careers/v2/viewRequisition?org=HAMILTONISLAND&cws=42&rid=26950",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "hamilton-island-golf-attendant",
+  "applicationId": "app_hamilton_island_golf_26950",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_hamilton_island_golf_26950",
+  "createdAt": "2026-11-01T21:34:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4803"
+  },
+  "files": {
+    "cvHtml": "applications/app_hamilton_island_golf_26950/cv-hamilton-island-golf-attendant.html",
+    "cvPdf": "applications/app_hamilton_island_golf_26950/cv-hamilton-island-golf-attendant.pdf",
+    "coverLetterHtml": "applications/app_hamilton_island_golf_26950/cover-letter-hamilton-island-golf-attendant.html",
+    "coverLetterPdf": "applications/app_hamilton_island_golf_26950/cover-letter-hamilton-island-golf-attendant.pdf",
+    "checklist": "applications/app_hamilton_island_golf_26950/checklist.md"
+  }
+}

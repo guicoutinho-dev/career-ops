@@ -1,0 +1,31 @@
+{
+  "job": {
+    "title": "Purchasing and Expediting Manager",
+    "company": "Hamilton Island Enterprises",
+    "location": "Hamilton Island, Whitsundays QLD, Postcode 4803",
+    "postcode": "4803",
+    "req_id": "25677",
+    "url": "https://phh.tbe.taleo.net/phh04/ats/careers/v2/viewRequisition?org=HAMILTONISLAND&cws=42&rid=25677",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Tourism & Hospitality in Northern Australia)"
+  },
+  "applicationId": "app_hamilton_island_purchasing_mgr_25677",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:14:35.127524",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4803"
+  },
+  "files": {
+    "cvHtml": "applications/app_hamilton_island_purchasing_mgr_25677/cv-hamilton-island-purchasing-mgr.html",
+    "cvPdf": "applications/app_hamilton_island_purchasing_mgr_25677/cv-hamilton-island-purchasing-mgr.pdf",
+    "coverLetterHtml": "applications/app_hamilton_island_purchasing_mgr_25677/cover-letter-hamilton-island-purchasing-mgr.html",
+    "coverLetterPdf": "applications/app_hamilton_island_purchasing_mgr_25677/cover-letter-hamilton-island-purchasing-mgr.pdf",
+    "submissionProof": "applications/app_hamilton_island_purchasing_mgr_25677/submission_proof.png"
+  }
+}

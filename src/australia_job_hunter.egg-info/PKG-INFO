@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: australia-job-hunter
+Version: 0.1.0
+Summary: Australia Job Hunter: persistent, human-supervised, multi-agent job search and application pipeline
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: uvicorn>=0.20.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: python-jobspy>=1.1.0
+Dynamic: license-file

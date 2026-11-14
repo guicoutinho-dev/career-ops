@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Senior Systems Support Specialist",
+    "company": "Hamilton Island Enterprises",
+    "location": "Hamilton Island, Whitsundays QLD, Postcode 4803",
+    "postcode": "4803",
+    "req_id": "27070",
+    "url": "https://phh.tbe.taleo.net/phh04/ats/careers/v2/viewRequisition?org=HAMILTONISLAND&cws=42&rid=27070",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "hamilton-island-systems-support",
+  "applicationId": "app_hamilton_island_sys_support_27070",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_hamilton_island_sys_support_27070",
+  "createdAt": "2026-11-01T21:35:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4803"
+  },
+  "files": {
+    "cvHtml": "applications/app_hamilton_island_sys_support_27070/cv-hamilton-island-systems-support.html",
+    "cvPdf": "applications/app_hamilton_island_sys_support_27070/cv-hamilton-island-systems-support.pdf",
+    "coverLetterHtml": "applications/app_hamilton_island_sys_support_27070/cover-letter-hamilton-island-systems-support.html",
+    "coverLetterPdf": "applications/app_hamilton_island_sys_support_27070/cover-letter-hamilton-island-systems-support.pdf",
+    "checklist": "applications/app_hamilton_island_sys_support_27070/checklist.md"
+  }
+}

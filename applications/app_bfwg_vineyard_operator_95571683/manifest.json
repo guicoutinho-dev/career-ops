@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Casual Vineyard Operator",
+    "company": "Brown Family Wine Group",
+    "location": "Hansonville VIC 3675",
+    "postcode": "3675",
+    "req_id": "seek_whv_95571683",
+    "url": "https://www.seek.com.au/job/95571683",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant Cultivation)"
+  },
+  "slug": "bfwg-vineyard-operator-banksdale",
+  "applicationId": "app_bfwg_vineyard_operator_95571683",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_bfwg_vineyard_operator_95571683",
+  "createdAt": "2026-11-02T23:42:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3675"
+  },
+  "files": {
+    "cvHtml": "applications/app_bfwg_vineyard_operator_95571683/cv-gilherme-vineyard-operator.html",
+    "cvPdf": "applications/app_bfwg_vineyard_operator_95571683/cv-gilherme-vineyard-operator.pdf",
+    "coverLetterHtml": "applications/app_bfwg_vineyard_operator_95571683/cover-letter-bfwg-vineyard-operator.html",
+    "coverLetterPdf": "applications/app_bfwg_vineyard_operator_95571683/cover-letter-bfwg-vineyard-operator.pdf",
+    "jobDescription": "applications/app_bfwg_vineyard_operator_95571683/job_description.md"
+  }
+}

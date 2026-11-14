@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP Technical Consultant",
+    "company": "Medibank Private Limited",
+    "location": "Docklands, Melbourne VIC, Australia",
+    "url": "https://www.seek.com.au/job/95167825",
+    "seek_id": "95167825"
+  },
+  "slug": "medibank-sap-technical-consultant",
+  "applicationId": "app_medibank_sap_tech_95167825",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_medibank_sap_tech_95167825",
+  "createdAt": "2026-11-03T18:10:31.552Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_medibank_sap_tech_95167825/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_medibank_sap_tech_95167825/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_medibank_sap_tech_95167825/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_medibank_sap_tech_95167825/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_medibank_sap_tech_95167825/checklist.md",
+    "jobDescription": "applications/app_medibank_sap_tech_95167825/job_description.md"
+  }
+}

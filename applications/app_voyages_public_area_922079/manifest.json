@@ -1,0 +1,31 @@
+{
+  "job": {
+    "title": "Public Area Attendant / Cleaner",
+    "company": "Voyages Indigenous Tourism Australia (Ayers Rock Resort)",
+    "location": "Yulara NT, Postcode 0872",
+    "postcode": "0872",
+    "req_id": "922079",
+    "url": "https://apply.jobadder.com/17985/922079/i5vrcpbbab3evppunfmpvljnau?site=au6",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "applicationId": "app_voyages_public_area_922079",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:58:03.868160",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "0872"
+  },
+  "files": {
+    "cvHtml": "applications/app_voyages_public_area_922079/cv-voyages-public-area-attendant.html",
+    "cvPdf": "applications/app_voyages_public_area_922079/cv-voyages-public-area-attendant.pdf",
+    "coverLetterHtml": "applications/app_voyages_public_area_922079/cover-letter-voyages-public-area-attendant.html",
+    "coverLetterPdf": "applications/app_voyages_public_area_922079/cover-letter-voyages-public-area-attendant.pdf",
+    "submissionProof": "applications/app_voyages_public_area_922079/submission_proof.png"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Grain Handler",
+    "company": "GrainCorp",
+    "location": "Boree Creek, NSW, Postcode 2652",
+    "postcode": "2652",
+    "req_id": "1368176666",
+    "url": "https://jobs.graincorp.com.au/job/Boree-Creek-Grain-Handler-Boree-Creek-New/1368176666/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 4 Plant & Animal Cultivation in Regional Australia)"
+  },
+  "slug": "graincorp-boree-creek-grain-handler",
+  "applicationId": "app_graincorp_boree_creek_1368176666",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_graincorp_boree_creek_1368176666",
+  "createdAt": "2026-11-01T23:58:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "2652"
+  },
+  "files": {
+    "cvHtml": "applications/app_graincorp_boree_creek_1368176666/cv-graincorp-boree-creek-grain-handler.html",
+    "cvPdf": "applications/app_graincorp_boree_creek_1368176666/cv-graincorp-boree-creek-grain-handler.pdf",
+    "coverLetterHtml": "applications/app_graincorp_boree_creek_1368176666/cover-letter-graincorp-boree-creek-grain-handler.html",
+    "coverLetterPdf": "applications/app_graincorp_boree_creek_1368176666/cover-letter-graincorp-boree-creek-grain-handler.pdf",
+    "checklist": "applications/app_graincorp_boree_creek_1368176666/checklist.md"
+  }
+}

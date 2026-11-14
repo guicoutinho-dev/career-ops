@@ -1,0 +1,31 @@
+{
+  "application_id": "app_003",
+  "candidate_name": "Guilherme Coutinho Xavier",
+  "email": "guicoutinho.dev@gmail.com",
+  "phone": "+55 71 99998-5833",
+  "location": "Salvador, Brazil (Relocating to Australia)",
+  "linkedin": "https://www.linkedin.com/in/guicoutin/",
+  "work_authorization_status": "Working Holiday Visa (subclass 462) eligible; independent work rights",
+  "requires_sponsorship": "No (Independent work rights for initial employment)",
+  "notice_period_availability": "Planning arrival early 2027; available remotely immediately for technical rounds",
+  "salary_expectation": "$100K - $140K AUD / $850 - $1,100 per day",
+  "relocation_declaration": "Willing and planning to relocate to Australia independently",
+  "technical_highlights": [
+    "4+ years SAP ABAP development in critical ECC and S/4HANA production systems",
+    "SAP Certified Solution Architect - SAP BTP",
+    "SAP Certified Associate - Back-End Developer - ABAP Cloud",
+    "Hands-on expertise in CDS Views, AMDP, OData via SAP Gateway, and FMCG integrations"
+  ],
+  "answers_by_field": {
+    "first_name": "Guilherme",
+    "last_name": "Coutinho Xavier",
+    "email": "guicoutinho.dev@gmail.com",
+    "phone": "+55 71 99998-5833",
+    "linkedin": "https://www.linkedin.com/in/guicoutin/",
+    "work_rights": "Working Holiday Visa (subclass 462) eligible; independent work rights",
+    "sponsorship_required": "No",
+    "availability": "Planning arrival early 2027; available remotely immediately for technical rounds",
+    "salary_expectation": "$100K - $140K AUD / $850 - $1,100 per day",
+    "relocation": "Willing and planning to relocate to Australia independently"
+  }
+}

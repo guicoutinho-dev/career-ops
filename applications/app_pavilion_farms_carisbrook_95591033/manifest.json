@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Farm Hand – Carisbrook",
+    "company": "Pavilion Farms",
+    "location": "Carisbrook VIC 3464",
+    "postcode": "3464",
+    "req_id": "seek_whv_95591033",
+    "url": "https://www.seek.com.au/job/95591033",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant & Animal Cultivation)"
+  },
+  "slug": "pavilion-farms-farmhand-carisbrook",
+  "applicationId": "app_pavilion_farms_carisbrook_95591033",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_pavilion_farms_carisbrook_95591033",
+  "createdAt": "2026-11-02T23:43:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3464"
+  },
+  "files": {
+    "cvHtml": "applications/app_pavilion_farms_carisbrook_95591033/cv-gilherme-farmhand-carisbrook.html",
+    "cvPdf": "applications/app_pavilion_farms_carisbrook_95591033/cv-gilherme-farmhand-carisbrook.pdf",
+    "coverLetterHtml": "applications/app_pavilion_farms_carisbrook_95591033/cover-letter-pavilion-farms-carisbrook.html",
+    "coverLetterPdf": "applications/app_pavilion_farms_carisbrook_95591033/cover-letter-pavilion-farms-carisbrook.pdf",
+    "jobDescription": "applications/app_pavilion_farms_carisbrook_95591033/job_description.md"
+  }
+}

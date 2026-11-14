@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Farm Hand - Irrigation",
+    "company": "GO.FARM Australia Pty Ltd",
+    "location": "Katunga VIC 3640",
+    "postcode": "3640",
+    "req_id": "seek_32f7abd799cb",
+    "url": "https://www.seek.com.au/job/95535089",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant Cultivation)"
+  },
+  "slug": "gofarm-farmhand-irrigation-katunga",
+  "applicationId": "app_seek_32f7abd799cb",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_gofarm_irrigation_katunga_95535089",
+  "createdAt": "2026-11-02T23:45:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3640"
+  },
+  "files": {
+    "cvHtml": "applications/app_gofarm_irrigation_katunga_95535089/cv-gilherme-irrigation-farmhand.html",
+    "cvPdf": "applications/app_gofarm_irrigation_katunga_95535089/cv-gilherme-irrigation-farmhand.pdf",
+    "coverLetterHtml": "applications/app_gofarm_irrigation_katunga_95535089/cover-letter-gofarm-irrigation.html",
+    "coverLetterPdf": "applications/app_gofarm_irrigation_katunga_95535089/cover-letter-gofarm-irrigation.pdf",
+    "jobDescription": "applications/app_gofarm_irrigation_katunga_95535089/job_description.md"
+  }
+}

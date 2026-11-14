@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP ABAP/Fiori Developer",
+    "company": "Randstad Digital",
+    "location": "Melbourne VIC, Australia",
+    "url": "https://www.seek.com.au/job/95344327",
+    "seek_id": "95344327"
+  },
+  "slug": "randstad-sap-abap-fiori-developer",
+  "applicationId": "app_randstad_abap_fiori_95344327",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_randstad_abap_fiori_95344327",
+  "createdAt": "2026-11-03T17:59:06.674Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_randstad_abap_fiori_95344327/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_randstad_abap_fiori_95344327/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_randstad_abap_fiori_95344327/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_randstad_abap_fiori_95344327/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_randstad_abap_fiori_95344327/checklist.md",
+    "jobDescription": "applications/app_randstad_abap_fiori_95344327/job_description.md"
+  }
+}

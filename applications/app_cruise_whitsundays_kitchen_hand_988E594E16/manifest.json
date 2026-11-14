@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Kitchen Hand",
+    "company": "Journey Beyond / Cruise Whitsundays",
+    "location": "Airlie Beach / Whitsundays, QLD, Postcode 4802",
+    "postcode": "4802",
+    "req_id": "988E594E16",
+    "url": "https://apply.workable.com/journey-beyond/j/988E594E16/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "cruise-whitsundays-kitchen-hand",
+  "applicationId": "app_cruise_whitsundays_kitchen_hand_988E594E16",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_cruise_whitsundays_kitchen_hand_988E594E16",
+  "createdAt": "2026-11-01T23:09:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4802"
+  },
+  "files": {
+    "cvHtml": "applications/app_cruise_whitsundays_kitchen_hand_988E594E16/cv-cruise-whitsundays-kitchen-hand.html",
+    "cvPdf": "applications/app_cruise_whitsundays_kitchen_hand_988E594E16/cv-cruise-whitsundays-kitchen-hand.pdf",
+    "coverLetterHtml": "applications/app_cruise_whitsundays_kitchen_hand_988E594E16/cover-letter-cruise-whitsundays-kitchen-hand.html",
+    "coverLetterPdf": "applications/app_cruise_whitsundays_kitchen_hand_988E594E16/cover-letter-cruise-whitsundays-kitchen-hand.pdf",
+    "checklist": "applications/app_cruise_whitsundays_kitchen_hand_988E594E16/checklist.md"
+  }
+}

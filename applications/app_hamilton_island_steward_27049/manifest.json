@@ -1,0 +1,36 @@
+{
+  "job": {
+    "title": "Kitchen Steward",
+    "company": "Hamilton Island Enterprises",
+    "location": "Hamilton Island, Whitsundays QLD, Postcode 4803",
+    "postcode": "4803",
+    "req_id": "27049",
+    "url": "https://phh.tbe.taleo.net/phh04/ats/careers/v2/viewRequisition?org=HAMILTONISLAND&cws=42&rid=27049",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "hamilton-island-enterprises-kitchen-steward",
+  "applicationId": "app_hamilton_island_steward_27049",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_hamilton_island_steward_27049",
+  "createdAt": "2026-11-01T22:36:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4803"
+  },
+  "files": {
+    "cvHtml": "applications/app_hamilton_island_steward_27049/cv-hamilton-island-kitchen-steward.html",
+    "cvPdf": "applications/app_hamilton_island_steward_27049/cv-hamilton-island-kitchen-steward.pdf",
+    "coverLetterHtml": "applications/app_hamilton_island_steward_27049/cover-letter-hamilton-island-kitchen-steward.html",
+    "coverLetterPdf": "applications/app_hamilton_island_steward_27049/cover-letter-hamilton-island-kitchen-steward.pdf",
+    "answers": "applications/app_hamilton_island_steward_27049/answers.json",
+    "checklist": "applications/app_hamilton_island_steward_27049/checklist.md",
+    "jobDescription": "applications/app_hamilton_island_steward_27049/job_description.md"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "job": {
+    "title": "Hospitality Attendant | Cruise Whitsundays",
+    "company": "Cruise Whitsundays / Journey Beyond",
+    "location": "Airlie Beach / Whitsundays QLD, Postcode 4802",
+    "postcode": "4802",
+    "req_id": "208DA0222B",
+    "url": "https://apply.workable.com/journey-beyond/j/208DA0222B/apply/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "applicationId": "app_cruise_whitsundays_hosp_attendant_208DA0222B",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-02T00:18:49.078980",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4802"
+  },
+  "files": {
+    "cvHtml": "applications/app_cruise_whitsundays_hosp_attendant_208DA0222B/cv-cruise-whitsundays-hosp-attendant.html",
+    "cvPdf": "applications/app_cruise_whitsundays_hosp_attendant_208DA0222B/cv-cruise-whitsundays-hosp-attendant.pdf",
+    "coverLetterHtml": "applications/app_cruise_whitsundays_hosp_attendant_208DA0222B/cover-letter-cruise-whitsundays-hosp-attendant.html",
+    "coverLetterPdf": "applications/app_cruise_whitsundays_hosp_attendant_208DA0222B/cover-letter-cruise-whitsundays-hosp-attendant.pdf",
+    "submissionProof": "applications/app_cruise_whitsundays_hosp_attendant_208DA0222B/submission_proof.png"
+  }
+}

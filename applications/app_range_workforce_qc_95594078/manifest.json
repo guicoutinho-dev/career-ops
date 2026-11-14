@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Multiple Quality Controllers - Orchard Operations",
+    "company": "Range Workforce Solutions",
+    "location": "Shepparton VIC 3630",
+    "postcode": "3630",
+    "req_id": "seek_whv_95594078",
+    "url": "https://www.seek.com.au/job/95594078",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant & Animal Cultivation)"
+  },
+  "slug": "range-workforce-qc-shepparton",
+  "applicationId": "app_range_workforce_qc_95594078",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_range_workforce_qc_95594078",
+  "createdAt": "2026-11-02T23:33:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3630"
+  },
+  "files": {
+    "cvHtml": "applications/app_range_workforce_qc_95594078/cv-range-workforce-qc.html",
+    "cvPdf": "applications/app_range_workforce_qc_95594078/cv-range-workforce-qc.pdf",
+    "coverLetterHtml": "applications/app_range_workforce_qc_95594078/cover-letter-range-workforce-qc.html",
+    "coverLetterPdf": "applications/app_range_workforce_qc_95594078/cover-letter-range-workforce-qc.pdf",
+    "jobDescription": "applications/app_range_workforce_qc_95594078/job_description.md"
+  }
+}

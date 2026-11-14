@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "Multiple SAP ABAP & S/4 HANA Engineers",
+    "company": "Compas Pty Ltd",
+    "location": "Brisbane QLD / Melbourne VIC, Australia",
+    "url": "https://www.seek.com.au/job/95446561",
+    "seek_id": "95446561"
+  },
+  "slug": "compas-sap-abap-s4hana-engineer",
+  "applicationId": "app_compas_abap_s4hana_95446561",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_compas_abap_s4hana_95446561",
+  "createdAt": "2026-11-03T17:59:16.723Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_compas_abap_s4hana_95446561/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_compas_abap_s4hana_95446561/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_compas_abap_s4hana_95446561/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_compas_abap_s4hana_95446561/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_compas_abap_s4hana_95446561/checklist.md",
+    "jobDescription": "applications/app_compas_abap_s4hana_95446561/job_description.md"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "application_id": "app_talent_95284984",
+  "candidate_name": "Guilherme Coutinho Xavier",
+  "email": "guicoutinho.dev@gmail.com",
+  "phone": "+55 71 99998-5833",
+  "location": "Melbourne, VIC, Australia - Full Australian Working Rights (WHV Subclass 462 - No Sponsorship Required)",
+  "linkedin": "https://www.linkedin.com/in/guicoutin/",
+  "work_authorization_status": "Full Australian Working Rights (WHV Subclass 462 - No Sponsorship Required)",
+  "requires_sponsorship": "No (Full Australian Working Rights, no sponsorship required)",
+  "notice_period_availability": "Available immediately for contract start; flexible commencement",
+  "salary_expectation": "$850 - $1,100 AUD per day / $120K - $145K AUD pro rata",
+  "contract_intent": "Immediate availability for 7-month contract and open to subsequent extensions",
+  "relocation_declaration": "Based in Melbourne VIC; prepared for Clayton hybrid arrangement (3 days on-site)",
+  "technical_highlights": [
+    "5 years of enterprise SAP ABAP experience across ECC and S/4HANA production systems",
+    "Comprehensive proficiency in OO ABAP, ALV reports, BADIs, User Exits, Adobe Forms, and SmartForms",
+    "Hands-on integration capability across RFC, BAPI, IDocs, and OData Gateway services",
+    "SAP Certified Associate - Back-End Developer - ABAP Cloud",
+    "SAP Certified Solution Architect - SAP BTP",
+    "SAP Certified Solution Architect - SAP Business AI Platform"
+  ],
+  "answers_by_field": {
+    "first_name": "Guilherme",
+    "last_name": "Coutinho Xavier",
+    "email": "guicoutinho.dev@gmail.com",
+    "phone": "+55 71 99998-5833",
+    "linkedin": "https://www.linkedin.com/in/guicoutin/",
+    "work_rights": "Full Australian Working Rights (WHV Subclass 462 - No Sponsorship Required)",
+    "sponsorship_required": "No",
+    "availability": "Immediate",
+    "rate_expectation": "$850 - $1,100 per day",
+    "relocation": "Based in Melbourne VIC (ready for Clayton onsite days)"
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "syn_001",
+    "source": "seek",
+    "external_id": "999001",
+    "canonical_url": "https://www.seek.com.au/job/999001?utm_source=test&utm_medium=cpc",
+    "employer": "Sydney Tech Partners",
+    "title": "SAP ABAP Developer",
+    "location": "Sydney NSW",
+    "description": "Seeking an experienced SAP ABAP Consultant for ECC to S/4HANA migration. Modern ABAP, CDS Views, and BTP experience highly regarded. Open to WHV holders with valid work rights.",
+    "publication_date": "2026-10-25"
+  },
+  {
+    "id": "syn_002",
+    "source": "jobspy_linkedin",
+    "external_id": "999002",
+    "canonical_url": "https://au.linkedin.com/jobs/view/999002?refId=xyz123&trackingId=abc",
+    "employer": "Melbourne Logistics Corp",
+    "title": "Warehouse Storeperson",
+    "location": "Melbourne VIC",
+    "description": "Immediate start warehouse assistant for packing, dispatch, and inventory checks. No forklift license required. WHV applicants welcome.",
+    "publication_date": "2026-10-26"
+  },
+  {
+    "id": "syn_003",
+    "source": "seek",
+    "external_id": "999003",
+    "canonical_url": "https://www.seek.com.au/job/999003",
+    "employer": "Defence Prime AU",
+    "title": "SAP Integration Specialist",
+    "location": "Canberra ACT",
+    "description": "Strictly Australian Citizens only with active NV1 security clearance. All other applicants will be rejected.",
+    "publication_date": "2026-10-24"
+  }
+]

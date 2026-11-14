@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Crop Inspector",
+    "company": "Gilmac Pty Ltd",
+    "location": "Goornong VIC 3557",
+    "postcode": "3557",
+    "req_id": "seek_whv_95160443",
+    "url": "https://www.seek.com.au/job/95160443",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant Cultivation)"
+  },
+  "slug": "gilmac-crop-inspector-goornong",
+  "applicationId": "app_gilmac_crop_inspector_95160443",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_gilmac_crop_inspector_95160443",
+  "createdAt": "2026-11-02T23:37:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3557"
+  },
+  "files": {
+    "cvHtml": "applications/app_gilmac_crop_inspector_95160443/cv-gilherme-crop-inspector.html",
+    "cvPdf": "applications/app_gilmac_crop_inspector_95160443/cv-gilherme-crop-inspector.pdf",
+    "coverLetterHtml": "applications/app_gilmac_crop_inspector_95160443/cover-letter-gilmac-crop-inspector.html",
+    "coverLetterPdf": "applications/app_gilmac_crop_inspector_95160443/cover-letter-gilmac-crop-inspector.pdf",
+    "jobDescription": "applications/app_gilmac_crop_inspector_95160443/job_description.md"
+  }
+}

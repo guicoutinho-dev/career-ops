@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mock Australian Employer Application Form</title>
+</head>
+<body>
+  <h2>Job Application: SAP ABAP & BTP Developer</h2>
+  <form id="job-application-form">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required><br><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required><br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="work_rights">Do you have legal rights to work in Australia?</label>
+    <select id="work_rights" name="work_rights">
+      <option value="">Select...</option>
+      <option value="citizen">Australian Citizen</option>
+      <option value="pr">Permanent Resident</option>
+      <option value="whv">Working Holiday Visa (subclass 417/462)</option>
+      <option value="sponsorship">Require Sponsorship</option>
+    </select><br><br>
+
+    <label for="notice_period">Availability / Notice Period:</label>
+    <input type="text" id="notice_period" name="notice_period"><br><br>
+
+    <label for="resume">Attach Resume (PDF):</label>
+    <input type="file" id="resume" name="resume"><br><br>
+
+    <label for="cover_letter">Attach Cover Letter (PDF):</label>
+    <input type="file" id="cover_letter" name="cover_letter"><br><br>
+
+    <button type="submit" id="submit-button">Submit Application</button>
+  </form>
+</body>
+</html>

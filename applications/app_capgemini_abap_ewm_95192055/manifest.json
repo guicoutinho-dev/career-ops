@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP ABAP EWM Consultant",
+    "company": "Capgemini Australia",
+    "location": "Melbourne VIC, Australia",
+    "url": "https://www.seek.com.au/job/95192055",
+    "seek_id": "95192055"
+  },
+  "slug": "capgemini-sap-abap-ewm-consultant",
+  "applicationId": "app_capgemini_abap_ewm_95192055",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_capgemini_abap_ewm_95192055",
+  "createdAt": "2026-11-03T17:59:12.398Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_capgemini_abap_ewm_95192055/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_capgemini_abap_ewm_95192055/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_capgemini_abap_ewm_95192055/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_capgemini_abap_ewm_95192055/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_capgemini_abap_ewm_95192055/checklist.md",
+    "jobDescription": "applications/app_capgemini_abap_ewm_95192055/job_description.md"
+  }
+}

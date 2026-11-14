@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Kitchen Attendant",
+    "company": "Minor Hotels / Oaks Port Douglas Resort",
+    "location": "Port Douglas, QLD, Postcode 4877",
+    "postcode": "4877",
+    "req_id": "744000156702859",
+    "rate": "$28.05/h",
+    "url": "https://careers.smartrecruiters.com/MinorHotels/744000156702859",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "oaks-port-douglas-kitchen",
+  "applicationId": "app_oaks_port_douglas_kitchen_744000156702859",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_oaks_port_douglas_kitchen_744000156702859",
+  "createdAt": "2026-11-01T23:15:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4877"
+  },
+  "files": {
+    "cvHtml": "applications/app_oaks_port_douglas_kitchen_744000156702859/cv-oaks-port-douglas-kitchen.html",
+    "cvPdf": "applications/app_oaks_port_douglas_kitchen_744000156702859/cv-oaks-port-douglas-kitchen.pdf",
+    "coverLetterHtml": "applications/app_oaks_port_douglas_kitchen_744000156702859/cover-letter-oaks-port-douglas-kitchen.html",
+    "coverLetterPdf": "applications/app_oaks_port_douglas_kitchen_744000156702859/cover-letter-oaks-port-douglas-kitchen.pdf",
+    "checklist": "applications/app_oaks_port_douglas_kitchen_744000156702859/checklist.md"
+  }
+}

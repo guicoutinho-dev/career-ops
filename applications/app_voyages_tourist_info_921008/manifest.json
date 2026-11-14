@@ -1,0 +1,31 @@
+{
+  "job": {
+    "title": "Tourist Information Centre Coordinator",
+    "company": "Voyages Indigenous Tourism Australia (Ayers Rock Resort)",
+    "location": "Yulara NT, Postcode 0872",
+    "postcode": "0872",
+    "req_id": "921008",
+    "url": "https://apply.jobadder.com/17985/921008/i5vrcpbbab3evppunfmpvljnau?site=au6",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "applicationId": "app_voyages_tourist_info_921008",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:55:19.509049",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "0872"
+  },
+  "files": {
+    "cvHtml": "applications/app_voyages_tourist_info_921008/cv-voyages-tourist-info-coordinator.html",
+    "cvPdf": "applications/app_voyages_tourist_info_921008/cv-voyages-tourist-info-coordinator.pdf",
+    "coverLetterHtml": "applications/app_voyages_tourist_info_921008/cover-letter-voyages-tourist-info-coordinator.html",
+    "coverLetterPdf": "applications/app_voyages_tourist_info_921008/cover-letter-voyages-tourist-info-coordinator.pdf",
+    "submissionProof": "applications/app_voyages_tourist_info_921008/submission_proof.png"
+  }
+}

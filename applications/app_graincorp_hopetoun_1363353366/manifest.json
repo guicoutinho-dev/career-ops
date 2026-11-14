@@ -1,0 +1,37 @@
+{
+  "job": {
+    "title": "Grain Handler",
+    "company": "GrainCorp",
+    "location": "Hopetoun VIC 3396",
+    "postcode": "3396",
+    "req_id": "1363353366",
+    "url": "https://jobs.graincorp.com.au/job/Hopetoun-Grain-Handler-Hopetoun-Vict/1363353366/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria)"
+  },
+  "slug": "graincorp-hopetoun-grain-handler",
+  "applicationId": "app_graincorp_hopetoun_1363353366",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_graincorp_hopetoun_1363353366",
+  "createdAt": "2026-11-01T22:38:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3396"
+  },
+  "files": {
+    "cvHtml": "applications/app_graincorp_hopetoun_1363353366/cv-graincorp-hopetoun-grain-handler.html",
+    "cvPdf": "applications/app_graincorp_hopetoun_1363353366/cv-graincorp-hopetoun-grain-handler.pdf",
+    "coverLetterHtml": "applications/app_graincorp_hopetoun_1363353366/cover-letter-graincorp-hopetoun-grain-handler.html",
+    "coverLetterPdf": "applications/app_graincorp_hopetoun_1363353366/cover-letter-graincorp-hopetoun-grain-handler.pdf",
+    "answers": "applications/app_graincorp_hopetoun_1363353366/answers.json",
+    "checklist": "applications/app_graincorp_hopetoun_1363353366/checklist.md",
+    "jobDescription": "applications/app_graincorp_hopetoun_1363353366/job_description.md"
+  }
+}

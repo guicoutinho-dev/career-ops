@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "2026 GrainCorp Harvest Casual Intake",
+    "company": "GrainCorp",
+    "location": "Regional NSW / VIC / QLD",
+    "postcode": "Regional Network",
+    "req_id": "1363615866",
+    "url": "https://jobs.graincorp.com.au/job/Various-2026-GrainCorp-Harvest-Casual-Intake/1363615866/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 4 Plant & Animal Cultivation in Regional Australia)"
+  },
+  "slug": "graincorp-harvest-2026",
+  "applicationId": "app_graincorp_harvest_2026_1363615866",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_graincorp_harvest_2026_1363615866",
+  "createdAt": "2026-11-01T23:55:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "Table 4 Eligible Regional Australia"
+  },
+  "files": {
+    "cvHtml": "applications/app_graincorp_harvest_2026_1363615866/cv-graincorp-harvest-2026.html",
+    "cvPdf": "applications/app_graincorp_harvest_2026_1363615866/cv-graincorp-harvest-2026.pdf",
+    "coverLetterHtml": "applications/app_graincorp_harvest_2026_1363615866/cover-letter-graincorp-harvest-2026.html",
+    "coverLetterPdf": "applications/app_graincorp_harvest_2026_1363615866/cover-letter-graincorp-harvest-2026.pdf",
+    "checklist": "applications/app_graincorp_harvest_2026_1363615866/checklist.md"
+  }
+}

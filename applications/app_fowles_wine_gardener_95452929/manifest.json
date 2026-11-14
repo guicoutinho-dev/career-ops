@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Gardener",
+    "company": "Fowles Wine",
+    "location": "Avenel VIC 3664",
+    "postcode": "3664",
+    "req_id": "seek_whv_95452929",
+    "url": "https://www.seek.com.au/job/95452929",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant Cultivation)"
+  },
+  "slug": "fowles-wine-gardener-avenel",
+  "applicationId": "app_fowles_wine_gardener_95452929",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_fowles_wine_gardener_95452929",
+  "createdAt": "2026-11-02T23:48:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3664"
+  },
+  "files": {
+    "cvHtml": "applications/app_fowles_wine_gardener_95452929/cv-gilherme-wine-gardener.html",
+    "cvPdf": "applications/app_fowles_wine_gardener_95452929/cv-gilherme-wine-gardener.pdf",
+    "coverLetterHtml": "applications/app_fowles_wine_gardener_95452929/cover-letter-fowles-wine-gardener.html",
+    "coverLetterPdf": "applications/app_fowles_wine_gardener_95452929/cover-letter-fowles-wine-gardener.pdf",
+    "jobDescription": "applications/app_fowles_wine_gardener_95452929/job_description.md"
+  }
+}

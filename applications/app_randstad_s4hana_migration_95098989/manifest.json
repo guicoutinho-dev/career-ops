@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP S/4HANA Data Migration & Test Coordinator",
+    "company": "Randstad Digital",
+    "location": "Brisbane QLD, Australia",
+    "url": "https://www.seek.com.au/job/95098989",
+    "seek_id": "95098989"
+  },
+  "slug": "randstad-sap-s4hana-migration-test-coordinator",
+  "applicationId": "app_randstad_s4hana_migration_95098989",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_randstad_s4hana_migration_95098989",
+  "createdAt": "2026-11-03T18:10:41.597Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_randstad_s4hana_migration_95098989/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_randstad_s4hana_migration_95098989/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_randstad_s4hana_migration_95098989/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_randstad_s4hana_migration_95098989/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_randstad_s4hana_migration_95098989/checklist.md",
+    "jobDescription": "applications/app_randstad_s4hana_migration_95098989/job_description.md"
+  }
+}

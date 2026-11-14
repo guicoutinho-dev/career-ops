@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Guest Experience Officer",
+    "company": "Journey Beyond / Horizontal Falls Seaplane Adventures",
+    "location": "Broome, WA, Postcode 6725",
+    "postcode": "6725",
+    "req_id": "5CA2B143F3",
+    "url": "https://apply.workable.com/journey-beyond/j/5CA2B143F3/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "horizontal-falls-guest-exp",
+  "applicationId": "app_horizontal_falls_guest_exp_5CA2B143F3",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_horizontal_falls_guest_exp_5CA2B143F3",
+  "createdAt": "2026-11-01T23:50:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "6725"
+  },
+  "files": {
+    "cvHtml": "applications/app_horizontal_falls_guest_exp_5CA2B143F3/cv-horizontal-falls-guest-exp.html",
+    "cvPdf": "applications/app_horizontal_falls_guest_exp_5CA2B143F3/cv-horizontal-falls-guest-exp.pdf",
+    "coverLetterHtml": "applications/app_horizontal_falls_guest_exp_5CA2B143F3/cover-letter-horizontal-falls-guest-exp.html",
+    "coverLetterPdf": "applications/app_horizontal_falls_guest_exp_5CA2B143F3/cover-letter-horizontal-falls-guest-exp.pdf",
+    "checklist": "applications/app_horizontal_falls_guest_exp_5CA2B143F3/checklist.md"
+  }
+}

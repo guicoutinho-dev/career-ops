@@ -1,0 +1,31 @@
+{
+  "job": {
+    "title": "Housekeeper / Cleaner",
+    "company": "Oaks Hotels & Resorts (Minor Hotels)",
+    "location": "Port Douglas QLD, Postcode 4877",
+    "postcode": "4877",
+    "req_id": "744000158610809",
+    "url": "https://jobs.smartrecruiters.com/MinorInternational/744000158610809",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Tourism & Hospitality in Northern Australia)"
+  },
+  "applicationId": "app_oaks_port_douglas_housekeeper_744000158610809",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:44:20.480204",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4877"
+  },
+  "files": {
+    "cvHtml": "applications/app_oaks_port_douglas_housekeeper_744000158610809/cv-oaks-port-douglas-housekeeper.html",
+    "cvPdf": "applications/app_oaks_port_douglas_housekeeper_744000158610809/cv-oaks-port-douglas-housekeeper.pdf",
+    "coverLetterHtml": "applications/app_oaks_port_douglas_housekeeper_744000158610809/cover-letter-oaks-port-douglas-housekeeper.html",
+    "coverLetterPdf": "applications/app_oaks_port_douglas_housekeeper_744000158610809/cover-letter-oaks-port-douglas-housekeeper.pdf",
+    "submissionProof": "applications/app_oaks_port_douglas_housekeeper_744000158610809/submission_proof.png"
+  }
+}

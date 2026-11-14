@@ -1,0 +1,32 @@
+{
+  "application_id": "app_hasfarm_95192223",
+  "candidate_name": "Guilherme Coutinho Xavier",
+  "email": "guicoutinho.dev@gmail.com",
+  "phone": "+55 71 99998-5833",
+  "location": "Sydney, NSW, Australia - Full Australian Working Rights (WHV Subclass 462 - No Sponsorship Required)",
+  "linkedin": "https://www.linkedin.com/in/guicoutin/",
+  "work_authorization_status": "Full Australian Working Rights (WHV Subclass 462 - No Sponsorship Required)",
+  "requires_sponsorship": "No (Full Australian Working Rights, no sponsorship required)",
+  "notice_period_availability": "Available immediately for technical rounds and interviews; flexible start date",
+  "salary_expectation": "$120K - $150K AUD / $900 - $1,150 per day",
+  "relocation_declaration": "Based in Sydney NSW; fully prepared for onsite/hybrid work in Ingleburn",
+  "technical_highlights": [
+    "5 years SAP ABAP development and integration experience across ECC and S/4HANA production systems",
+    "SAP Certified Solution Architect - SAP BTP",
+    "SAP Certified Associate - Back-End Developer - ABAP Cloud",
+    "SAP Certified Solution Architect - SAP Business AI Platform",
+    "Hands-on expertise in SAP Integration Suite (CPI), iFlows, OData / REST APIs, RFC/IDocs, CDS Views, and AMDP"
+  ],
+  "answers_by_field": {
+    "first_name": "Guilherme",
+    "last_name": "Coutinho Xavier",
+    "email": "guicoutinho.dev@gmail.com",
+    "phone": "+55 71 99998-5833",
+    "linkedin": "https://www.linkedin.com/in/guicoutin/",
+    "work_rights": "Full Australian Working Rights (WHV Subclass 462 - No Sponsorship Required)",
+    "sponsorship_required": "No",
+    "availability": "Available immediately for interviews; flexible commencement",
+    "salary_expectation": "$120K - $150K AUD / $900 - $1,150 per day",
+    "relocation": "Based in Sydney NSW (prepared for Ingleburn hybrid)"
+  }
+}

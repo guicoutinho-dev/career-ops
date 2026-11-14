@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Grain Handler",
+    "company": "GrainCorp",
+    "location": "Oaklands, NSW, Postcode 2646",
+    "postcode": "2646",
+    "req_id": "1369151266",
+    "url": "https://jobs.graincorp.com.au/job/Oaklands-Grain-Handler-Oaklands-New/1369151266/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 4 Plant & Animal Cultivation in Regional Australia)"
+  },
+  "slug": "graincorp-oaklands-grain-handler",
+  "applicationId": "app_graincorp_oaklands_1369151266",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_graincorp_oaklands_1369151266",
+  "createdAt": "2026-11-01T23:56:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "2646"
+  },
+  "files": {
+    "cvHtml": "applications/app_graincorp_oaklands_1369151266/cv-graincorp-oaklands-grain-handler.html",
+    "cvPdf": "applications/app_graincorp_oaklands_1369151266/cv-graincorp-oaklands-grain-handler.pdf",
+    "coverLetterHtml": "applications/app_graincorp_oaklands_1369151266/cover-letter-graincorp-oaklands-grain-handler.html",
+    "coverLetterPdf": "applications/app_graincorp_oaklands_1369151266/cover-letter-graincorp-oaklands-grain-handler.pdf",
+    "checklist": "applications/app_graincorp_oaklands_1369151266/checklist.md"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "req-20261027-010743-a90e7045b5",
+  "requester": "Farol",
+  "need": "Teste de integracao do fluxo do coordenador com pergunta ficticia e nao sensivel.",
+  "tried": "Testes simulados com CLI falso ja passaram; falta o ciclo real.",
+  "question": "Pergunta ficticia de teste: em um paragrafo curto e depois uma lista de 3 itens, explique quando usar indices em um banco SQLite.",
+  "questionHash": "a90e70dc3b7e",
+  "questionSha256": "a90e70dc3b7e6615138d0a0c58fe2e2c16b06aab04edc74a7e4861dbc59a0685",
+  "questionFile": "consultas\\pedidos\\req-20261027-010743-a90e7045b5.pergunta.md",
+  "status": "answered",
+  "createdAt": "2026-10-27T01:07:43.817Z",
+  "priorSameQuestion": [],
+  "approval": {
+    "phrase": "APROVO a90e70dc3b7e",
+    "at": "2026-10-27T01:11:39.744Z",
+    "note": "frase digitada pelo humano e repassada pelo coordenador"
+  },
+  "startedAt": "2026-10-27T01:11:39.745Z",
+  "updatedAt": "2026-10-27T01:12:36.545Z",
+  "consultId": "20261027-011139-a90e70cd0e",
+  "consultFile": "consultas\\20261027-011139-a90e70cd0e.md",
+  "consultState": "ok",
+  "verification": {
+    "autoChecksPassed": true,
+    "notes": [],
+    "chars": 892,
+    "at": "2026-10-27T01:11:49.857Z",
+    "pending": "avaliacao de pertinencia pelo coordenador"
+  },
+  "forward": {
+    "attempts": 1,
+    "at": "2026-10-27T01:12:36.544Z",
+    "state": "delivered"
+  }
+}

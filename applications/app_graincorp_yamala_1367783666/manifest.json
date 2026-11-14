@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Grain Handler",
+    "company": "GrainCorp",
+    "location": "Yamala, QLD, Postcode 4720",
+    "postcode": "4720",
+    "req_id": "1367783666",
+    "url": "https://jobs.graincorp.com.au/job/Yamala-Grain-Handler-Yamala-Quee/1367783666/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 4 Plant & Animal Cultivation in Regional Australia)"
+  },
+  "slug": "graincorp-yamala-grain-handler",
+  "applicationId": "app_graincorp_yamala_1367783666",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_graincorp_yamala_1367783666",
+  "createdAt": "2026-11-01T23:25:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4720"
+  },
+  "files": {
+    "cvHtml": "applications/app_graincorp_yamala_1367783666/cv-graincorp-yamala-grain-handler.html",
+    "cvPdf": "applications/app_graincorp_yamala_1367783666/cv-graincorp-yamala-grain-handler.pdf",
+    "coverLetterHtml": "applications/app_graincorp_yamala_1367783666/cover-letter-graincorp-yamala-grain-handler.html",
+    "coverLetterPdf": "applications/app_graincorp_yamala_1367783666/cover-letter-graincorp-yamala-grain-handler.pdf",
+    "checklist": "applications/app_graincorp_yamala_1367783666/checklist.md"
+  }
+}

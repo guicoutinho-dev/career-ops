@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Harvest Administrator - Casual",
+    "company": "GrainCorp",
+    "location": "Marong, VIC 3515 / Wagga Wagga, NSW 2650",
+    "postcode": "3515",
+    "req_id": "1367635866",
+    "url": "https://jobs.graincorp.com.au/job/Marong-Harvest-Administrator-Casual-Vict/1367635866/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 4 Plant & Animal Cultivation in Regional Australia)"
+  },
+  "slug": "graincorp-harvest-admin",
+  "applicationId": "app_graincorp_harvest_admin_1367635866",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_graincorp_harvest_admin_1367635866",
+  "createdAt": "2026-11-01T21:31:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3515"
+  },
+  "files": {
+    "cvHtml": "applications/app_graincorp_harvest_admin_1367635866/cv-graincorp-harvest-admin.html",
+    "cvPdf": "applications/app_graincorp_harvest_admin_1367635866/cv-graincorp-harvest-admin.pdf",
+    "coverLetterHtml": "applications/app_graincorp_harvest_admin_1367635866/cover-letter-graincorp-harvest-admin.html",
+    "coverLetterPdf": "applications/app_graincorp_harvest_admin_1367635866/cover-letter-graincorp-harvest-admin.pdf",
+    "checklist": "applications/app_graincorp_harvest_admin_1367635866/checklist.md"
+  }
+}

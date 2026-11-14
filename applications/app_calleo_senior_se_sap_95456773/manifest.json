@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "Senior Software Engineer (SAP)",
+    "company": "Calleo",
+    "location": "Melbourne VIC, Australia",
+    "url": "https://www.seek.com.au/job/95456773",
+    "seek_id": "95456773"
+  },
+  "slug": "calleo-senior-software-engineer-sap",
+  "applicationId": "app_calleo_senior_se_sap_95456773",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_calleo_senior_se_sap_95456773",
+  "createdAt": "2026-11-03T18:10:32.940Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_calleo_senior_se_sap_95456773/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_calleo_senior_se_sap_95456773/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_calleo_senior_se_sap_95456773/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_calleo_senior_se_sap_95456773/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_calleo_senior_se_sap_95456773/checklist.md",
+    "jobDescription": "applications/app_calleo_senior_se_sap_95456773/job_description.md"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Finance Officer",
+    "company": "Daydream Island Resort",
+    "location": "Daydream Island, Whitsundays QLD, Postcode 4741",
+    "postcode": "4741",
+    "req_id": "346",
+    "url": "https://daydreamisland.livehire.com/job/346",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "daydream-island-finance-officer",
+  "applicationId": "app_daydream_island_finance_346",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_daydream_island_finance_346",
+  "createdAt": "2026-11-01T21:33:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4741"
+  },
+  "files": {
+    "cvHtml": "applications/app_daydream_island_finance_346/cv-daydream-island-finance-officer.html",
+    "cvPdf": "applications/app_daydream_island_finance_346/cv-daydream-island-finance-officer.pdf",
+    "coverLetterHtml": "applications/app_daydream_island_finance_346/cover-letter-daydream-island-finance-officer.html",
+    "coverLetterPdf": "applications/app_daydream_island_finance_346/cover-letter-daydream-island-finance-officer.pdf",
+    "checklist": "applications/app_daydream_island_finance_346/checklist.md"
+  }
+}

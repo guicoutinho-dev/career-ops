@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Dairy Hand and Maintenance",
+    "company": "T and K Morley",
+    "location": "Gormandale VIC 3873",
+    "postcode": "3873",
+    "req_id": "seek_whv_95340092",
+    "url": "https://www.seek.com.au/job/95340092",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant & Animal Cultivation)"
+  },
+  "slug": "morley-dairy-hand-maintenance-gormandale",
+  "applicationId": "app_morley_dairy_hand_95340092",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_morley_dairy_hand_95340092",
+  "createdAt": "2026-11-02T23:57:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3873"
+  },
+  "files": {
+    "cvHtml": "applications/app_morley_dairy_hand_95340092/cv-gilherme-dairy-hand.html",
+    "cvPdf": "applications/app_morley_dairy_hand_95340092/cv-gilherme-dairy-hand.pdf",
+    "coverLetterHtml": "applications/app_morley_dairy_hand_95340092/cover-letter-morley-dairy.html",
+    "coverLetterPdf": "applications/app_morley_dairy_hand_95340092/cover-letter-morley-dairy.pdf",
+    "jobDescription": "applications/app_morley_dairy_hand_95340092/job_description.md"
+  }
+}

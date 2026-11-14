@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guilherme Coutinho Xavier — SAP Architect CV</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 8.2pt;
+    line-height: 1.38;
+    color: #000000;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 3px;
+  }
+
+  .header h1 {
+    font-size: 26pt;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+
+  .contact-row {
+    font-size: 8.2pt;
+    line-height: 1.4;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+
+  .contact-links {
+    font-size: 8.2pt;
+    color: #000000;
+  }
+
+  .contact-links a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .contact-links .separator {
+    color: #000000;
+    margin: 0 4px;
+  }
+
+  /* === DIVIDER LINES === */
+  .divider {
+    border-bottom: 0.75pt solid #000000;
+    margin: 6px 0;
+  }
+
+  /* === SUBTITLE / TARGET ROLE === */
+  .cv-subtitle {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 3px;
+  }
+
+  .summary-text {
+    font-size: 8.2pt;
+    line-height: 1.4;
+    color: #000000;
+    text-align: justify;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 2px;
+  }
+
+  .section-title {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 3px;
+  }
+
+  /* === SKILLS COMPACT GRID === */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5px;
+  }
+
+  .skill-item {
+    font-size: 8.2pt;
+    line-height: 1.38;
+  }
+
+  .skill-category {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  /* === WORK EXPERIENCE === */
+  .job {
+    margin-bottom: 4px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 8.2pt;
+    margin-bottom: 1px;
+  }
+
+  .job-company {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .job-period {
+    font-size: 8.2pt;
+    color: #000000;
+  }
+
+  .job-role {
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 8.2pt;
+    margin-bottom: 1px;
+  }
+
+  .bullets {
+    list-style-type: disc;
+    padding-left: 14px;
+  }
+
+  .bullets li {
+    font-size: 8.2pt;
+    line-height: 1.38;
+    color: #000000;
+    margin-bottom: 1px;
+    text-align: justify;
+  }
+
+  /* === EDUCATION & CERTIFICATIONS / LANGUAGES === */
+  .footer-columns {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer-col-left {
+    flex: 2.8;
+  }
+
+  .footer-col-right {
+    flex: 1.2;
+  }
+
+  .edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 8.2pt;
+    line-height: 1.38;
+    margin-bottom: 1px;
+  }
+
+  .edu-degree {
+    font-weight: 700;
+  }
+
+  .edu-year {
+    font-size: 8.2pt;
+  }
+
+  .edu-org {
+    font-size: 8.2pt;
+    margin-bottom: 2px;
+  }
+
+  .cert-row {
+    font-size: 8.2pt;
+    line-height: 1.38;
+    margin-bottom: 1px;
+  }
+
+  .lang-item {
+    font-size: 8.2pt;
+    line-height: 1.38;
+    margin-bottom: 1px;
+  }
+
+  /* === PRINT STYLES === */
+  @page {
+    size: A4 portrait;
+    margin: 7mm 9mm 7mm 9mm;
+  }
+
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .page {
+      max-width: none;
+      width: 100%;
+    }
+    .job, .skill-item, .footer-columns {
+      page-break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="header">
+    <h1>Guilherme Coutinho Xavier</h1>
+    <div class="contact-row">
+      Brisbane, QLD, Australia &bull; Full Australian Working Rights (WHV Subclass 462 &bull; No Sponsorship Required) &bull; Immediate Start
+    </div>
+    <div class="contact-links">
+      <a href="mailto:guicoutinho.dev@gmail.com">guicoutinho.dev@gmail.com</a>
+      <span class="separator">/</span>
+      +55 71 99998-5833
+      <span class="separator">/</span>
+      <a href="https://www.linkedin.com/in/guicoutin/">linkedin.com/in/guicoutin</a>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="cv-subtitle">SAP ARCHITECT &bull; PLATFORM DESIGN &amp; DELIVERY &bull; S/4HANA &amp; SAP BTP</div>
+  <p class="summary-text">
+    SAP Architect and Senior Consultant with 5 years of enterprise delivery experience across SAP ECC and S/4HANA landscapes at Accenture and Deloitte. Certified in SAP BTP Solution Architecture, ABAP Cloud, and SAP Business AI Platform. Extensive expertise in technical solution design assurance, Clean Core architecture, S/4HANA migration, CDS Views, and modern enterprise integration via SAP BTP Integration Suite and SAP Gateway OData. Proven capability in reviewing system integrator designs, diagnosing complex cross-platform integrations, and ensuring scalable, high-performance platform delivery for mission-critical enterprise programs.
+  </p>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-title">SKILLS &amp; ARCHITECTURAL DOMAINS</div>
+    <div class="skills-grid">
+      <div class="skill-item">
+        <span class="skill-category">Architecture &amp; Cloud:</span> SAP S/4HANA Solution Architecture, Clean Core Principles, SAP BTP Solution Architecture, ABAP Cloud, Technical Design Assurance, System Integrator Review, Enterprise Governance.
+      </div>
+      <div class="skill-item">
+        <span class="skill-category">Integration &amp; Middleware:</span> SAP BTP Integration Suite, SAP Gateway OData (v2/v4), CDS Views, AMDP, REST/SOAP APIs, Ariba Cloud Integration Gateway (CIG) exposure, Interface Error Handling.
+      </div>
+      <div class="skill-item">
+        <span class="skill-category">Development &amp; Core SAP:</span> OO ABAP, S/4HANA Migration, Enhancements (BADIs, User Exits), Performance Optimization, Debugging SAP Standard, SD/MM/FI-AP Process Integration, Transport Management (STMS).
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Accenture</span>
+        <span class="job-period">Aug 2023 &ndash; Present</span>
+      </div>
+      <div class="job-role">SAP Senior Consultant / Technical Architecture &amp; Delivery</div>
+      <ul class="bullets">
+        <li>Delivered technical solution designs and core enhancements across production-critical SAP ECC and S/4HANA landscapes for a multinational enterprise client.</li>
+        <li>Analyzed and resolved 1,260 complex SAP Notes during a major tax reform, debugging standard function modules and accelerating delivery cycles from 2 months down to 4 days.</li>
+        <li>Engineered high-performance CDS Views and OData services for integration with external enterprise platforms, enforcing strict architectural design assurance and governance.</li>
+        <li>Awarded internal client delivery excellence recognition in the first year for rigorous technical leadership and execution speed.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Deloitte</span>
+        <span class="job-period">Nov 2022 &ndash; Aug 2023</span>
+      </div>
+      <div class="job-role">SAP Consultant / S/4HANA &amp; Integration</div>
+      <ul class="bullets">
+        <li>Contributed to large-scale S/4HANA implementation and integration streams, adhering strictly to ABAP for HANA and modern extension standards.</li>
+        <li>Designed and developed CDS Views, AMDP procedures, and custom integration wrappers to optimize cross-module data flow and high-volume transaction processing.</li>
+        <li>Collaborated with enterprise functional leads and System Integrators to validate solution blueprints, identify technical dependencies, and ensure architectural alignment.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Softtek</span>
+        <span class="job-period">Feb 2022 &ndash; Nov 2022</span>
+      </div>
+      <div class="job-role">SAP Consultant &bull; Production Support &amp; Enhancements</div>
+      <ul class="bullets">
+        <li>Supported complex SAP ECC enterprise environments, executing corrective enhancements, performance tuning, and technical incident resolution.</li>
+        <li>Maintained interface integrity, transport transports (STMS), and standard documentation ensuring robust release management.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="footer-columns">
+    <div class="footer-col-left">
+      <div class="section-title">EDUCATION &amp; CERTIFICATIONS</div>
+      <div class="edu-item">
+        <span class="edu-degree">B.S. in Systems Analysis and Development</span>
+        <span class="edu-year">Catholic University of Salvador</span>
+      </div>
+      <div class="cert-row"><strong>SAP Certified:</strong> Solution Architect &ndash; SAP BTP &bull; Solution Architect &ndash; SAP Business AI</div>
+      <div class="cert-row"><strong>SAP Certified:</strong> Associate &ndash; Back-End Developer &ndash; ABAP Cloud</div>
+    </div>
+    <div class="footer-col-right">
+      <div class="section-title">LANGUAGES</div>
+      <div class="lang-item"><strong>English:</strong> Advanced / Professional</div>
+      <div class="lang-item"><strong>Portuguese:</strong> Native</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

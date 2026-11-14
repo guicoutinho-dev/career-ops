@@ -1,0 +1,409 @@
+<!-- career-ops-template
+name: Guilherme Executive Minimalist
+format: html
+author: Guilherme Coutinho Xavier
+description: Exact Canva 1-page layout with minimalist Swiss monochrome lines, executive header, and two-column education/languages footer.
+-->
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{NAME}} — CV</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 9.4pt;
+    line-height: 1.35;
+    color: #000000;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: {{PAGE_WIDTH}};
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 2px;
+  }
+
+  .header h1 {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 32pt;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    margin-bottom: 6px;
+  }
+
+  .contact-row {
+    font-size: 9.5pt;
+    line-height: 1.4;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+
+  .contact-location {
+    font-size: 9.5pt;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+
+  .contact-links {
+    font-size: 9.5pt;
+    color: #000000;
+  }
+
+  .contact-links a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .contact-links .separator {
+    color: #000000;
+    margin: 0 4px;
+  }
+
+  /* === DIVIDER LINES === */
+  .divider {
+    border-bottom: 0.75pt solid #000000;
+    margin: 8px 0;
+  }
+
+  /* === SUBTITLE / TARGET ROLE === */
+  .cv-subtitle {
+    font-size: 10.2pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 4px;
+    line-height: 1.25;
+  }
+
+  /* === PROFESSIONAL SUMMARY === */
+  .summary-text {
+    font-size: 9.2pt;
+    line-height: 1.34;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 2px;
+  }
+
+  .summary-text strong {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  /* Hidden / inline optional items */
+  .hidden-block {
+    display: none;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 2px;
+  }
+
+  .section-title {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #000000;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  /* === SKILLS === */
+  .skills-grid {
+    font-size: 9.2pt;
+    line-height: 1.34;
+    color: #000000;
+  }
+
+  .skill-item {
+    margin-bottom: 3px;
+  }
+
+  .skill-category strong {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  /* === PROFESSIONAL EXPERIENCE === */
+  .job {
+    margin-bottom: 7px;
+  }
+
+  .job:last-child {
+    margin-bottom: 2px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .job-company {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .job-period {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #000000;
+    white-space: nowrap;
+  }
+
+  .job-role {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+
+  .job ul {
+    padding-left: 15px;
+    margin: 2px 0 0 0;
+    list-style-type: disc;
+  }
+
+  .job li {
+    font-size: 9.1pt;
+    line-height: 1.33;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+
+  .job li:last-child {
+    margin-bottom: 0;
+  }
+
+  /* === FOOTER TWO-COLUMN SECTION === */
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 3px;
+  }
+
+  .footer-col-left {
+    width: 53%;
+    padding-right: 14px;
+  }
+
+  .footer-divider {
+    width: 0.75pt;
+    background: #000000;
+    margin: 0;
+  }
+
+  .footer-col-right {
+    width: 47%;
+    padding-left: 14px;
+  }
+
+  /* Certifications */
+  .cert-table {
+    margin-bottom: 4px;
+  }
+
+  .cert-item {
+    margin-bottom: 3px;
+    line-height: 1.32;
+  }
+
+  .cert-title {
+    font-size: 9.1pt;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: underline;
+    display: inline;
+  }
+
+  .cert-org, .cert-year {
+    display: none;
+  }
+
+  /* Education */
+  .edu-item {
+    margin-top: 5px;
+    line-height: 1.32;
+  }
+
+  .edu-title {
+    font-size: 9.1pt;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .edu-org {
+    font-size: 9.1pt;
+    font-weight: normal;
+    color: #000000;
+  }
+
+  .edu-year, .edu-desc {
+    display: none;
+  }
+
+  /* Languages */
+  .languages-list {
+    padding-left: 15px;
+    margin: 2px 0 0 0;
+    list-style-type: disc;
+  }
+
+  .languages-list li {
+    font-size: 9.1pt;
+    line-height: 1.34;
+    color: #000000;
+    margin-bottom: 3px;
+  }
+
+  .cv-photo {
+    float: right;
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 0 8px 14px;
+    border-radius: 3px;
+    border: 1px solid #e2e2e2;
+  }
+
+  html[lang="ar"] .cv-photo {
+    float: left;
+    margin: 0 14px 8px 0;
+  }
+
+  html[lang="ja"] body {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+      'Yu Gothic', 'YuGothic', 'Noto Sans CJK JP', 'Noto Sans JP',
+      Meiryo, 'MS PGothic', sans-serif;
+  }
+
+  html[lang="ja"] .header h1,
+  html[lang="ja"] .section-title,
+  html[lang="ja"] .job-company,
+  html[lang="ja"] .project-title,
+  html[lang="ja"] .competency-tag,
+  html[lang="ja"] .skill-category {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN',
+      'Yu Gothic', 'YuGothic', 'Noto Sans CJK JP', 'Noto Sans JP',
+      Meiryo, 'MS PGothic', sans-serif;
+  }
+
+  @media print {
+    body {
+      background: none;
+    }
+    .page {
+      padding: 0;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  {{PHOTO}}
+  <!-- HEADER -->
+  <div class="header">
+    <h1>{{NAME}}</h1>
+    <div class="contact-row">
+      <!-- will be populated by buildContactRow -->
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SUBTITLE & PROFESSIONAL SUMMARY -->
+  <div class="sr-only section-title">{{SECTION_SUMMARY}}</div>
+  <div class="cv-subtitle">{{SUBTITLE}}</div>
+  <div class="summary-text">{{SUMMARY_TEXT}}</div>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">{{SECTION_SKILLS}}</div>
+    {{SKILLS}}
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">{{SECTION_EXPERIENCE}}</div>
+    {{EXPERIENCE}}
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- FOOTER TWO-COLUMN: EDUCATION & CERTIFICATIONS | LANGUAGES -->
+  <div class="footer-columns">
+    <div class="footer-col-left">
+      <div class="section-title">{{SECTION_EDUCATION}}</div>
+      <div class="cert-table">
+        {{CERTIFICATIONS}}
+      </div>
+      {{EDUCATION}}
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-col-right">
+      <div class="section-title">{{SECTION_LANGUAGES}}</div>
+      <ul class="languages-list">
+        {{LANGUAGES}}
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hidden compatibility tags to satisfy standard placeholders if evaluated -->
+  <div class="hidden-block">
+    <div class="hidden-block">{{SECTION_COMPETENCIES}}</div>
+    {{COMPETENCIES}}
+    <div class="hidden-block">{{SECTION_PROJECTS}}</div>
+    {{PROJECTS}}
+    <div class="hidden-block">{{SECTION_CERTIFICATIONS}}</div>
+  </div>
+
+</div>
+</body>
+</html>

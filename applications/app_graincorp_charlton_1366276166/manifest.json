@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Grain Handler",
+    "company": "GrainCorp",
+    "location": "Charlton, VIC, Postcode 3525",
+    "postcode": "3525",
+    "req_id": "1366276166",
+    "url": "https://jobs.graincorp.com.au/job/Charlton-Grain-Handler-Charlton-Vict/1366276166/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 4 Plant & Animal Cultivation in Regional Australia)"
+  },
+  "slug": "graincorp-charlton-grain-handler",
+  "applicationId": "app_graincorp_charlton_1366276166",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_graincorp_charlton_1366276166",
+  "createdAt": "2026-11-01T21:05:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3525"
+  },
+  "files": {
+    "cvHtml": "applications/app_graincorp_charlton_1366276166/cv-graincorp-charlton-grain-handler.html",
+    "cvPdf": "applications/app_graincorp_charlton_1366276166/cv-graincorp-charlton-grain-handler.pdf",
+    "coverLetterHtml": "applications/app_graincorp_charlton_1366276166/cover-letter-graincorp-charlton-grain-handler.html",
+    "coverLetterPdf": "applications/app_graincorp_charlton_1366276166/cover-letter-graincorp-charlton-grain-handler.pdf",
+    "checklist": "applications/app_graincorp_charlton_1366276166/checklist.md"
+  }
+}

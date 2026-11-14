@@ -1,0 +1,233 @@
+{
+  "Rockdale": {
+    "lat": -33.954262,
+    "lng": 151.140366,
+    "bbox": [
+      -33.9654123,
+      -33.943146,
+      151.1282155,
+      151.1528745
+    ],
+    "display_name": "Rockdale, St George, Sydney, New South Wales, 2216, Australia"
+  },
+  "Kogarah": {
+    "lat": -33.968226,
+    "lng": 151.135451,
+    "bbox": [
+      -33.9804057,
+      -33.9560124,
+      151.125884,
+      151.1450172
+    ],
+    "display_name": "Kogarah, St George, Sydney, New South Wales, 2217, Australia"
+  },
+  "Mascot": {
+    "lat": -33.928956,
+    "lng": 151.195178,
+    "bbox": [
+      -33.9740292,
+      -33.9192632,
+      151.1598266,
+      151.2077326
+    ],
+    "display_name": "Mascot, Sydney, New South Wales, 2020, Australia"
+  },
+  "Wolli Creek": {
+    "lat": -33.928522,
+    "lng": 151.153989,
+    "bbox": [
+      -33.9335225,
+      -33.9235225,
+      151.1489888,
+      151.1589888
+    ],
+    "display_name": "Wolli Creek, Spark Lane, Wolli Creek, St George, Sydney, New South Wales, 2205, Australia"
+  },
+  "Arncliffe": {
+    "lat": -33.938236,
+    "lng": 151.145508,
+    "bbox": [
+      -33.9461109,
+      -33.9303416,
+      151.1297016,
+      151.1612954
+    ],
+    "display_name": "Arncliffe, St George, Sydney, New South Wales, 2205, Australia"
+  },
+  "Hurstville": {
+    "lat": -33.960707,
+    "lng": 151.100361,
+    "bbox": [
+      -33.9756084,
+      -33.9499219,
+      151.0858366,
+      151.1162181
+    ],
+    "display_name": "Hurstville, St George, Sydney, New South Wales, 2220, Australia"
+  },
+  "Campsie": {
+    "lat": -33.914389,
+    "lng": 151.103213,
+    "bbox": [
+      -33.9269842,
+      -33.9017977,
+      151.0910666,
+      151.1156272
+    ],
+    "display_name": "Campsie, Sydney, New South Wales, 2194, Australia"
+  },
+  "Rosebery": {
+    "lat": -33.918586,
+    "lng": 151.204692,
+    "bbox": [
+      -33.9269812,
+      -33.9101561,
+      151.1954647,
+      151.2142423
+    ],
+    "display_name": "Rosebery, Sydney, New South Wales, Australia"
+  },
+  "Bondi": {
+    "lat": -33.893056,
+    "lng": 151.263333,
+    "bbox": [
+      -33.898248,
+      -33.8879458,
+      151.2580583,
+      151.27585
+    ],
+    "display_name": "Bondi, Eastern Suburbs, Sydney, New South Wales, Australia"
+  },
+  "Maroubra": {
+    "lat": -33.945344,
+    "lng": 151.245682,
+    "bbox": [
+      -33.9580178,
+      -33.9328307,
+      151.2267281,
+      151.265742
+    ],
+    "display_name": "Maroubra, Eastern Suburbs, Sydney, New South Wales, 2035, Australia"
+  },
+  "Ingleburn": {
+    "lat": -33.998333,
+    "lng": 150.851111,
+    "bbox": [
+      -34.0249401,
+      -33.9849156,
+      150.8276552,
+      150.8885352
+    ],
+    "display_name": "Ingleburn, New South Wales, Australia"
+  },
+  "Yulara": {
+    "lat": -25.241011,
+    "lng": 130.986941,
+    "bbox": [
+      -25.265248,
+      -25.148568,
+      130.930466,
+      131.009643
+    ],
+    "display_name": "Yulara, Northern Territory, Australia"
+  },
+  "Hamilton Island": {
+    "lat": -20.354626,
+    "lng": 148.956052,
+    "bbox": [
+      -20.3777174,
+      -20.331442,
+      148.9447901,
+      148.9827887
+    ],
+    "display_name": "Hamilton Island, Whitsundays, Hamilton Island, Queensland, Australia"
+  },
+  "Airlie Beach": {
+    "lat": -20.272494,
+    "lng": 148.718147,
+    "bbox": [
+      -20.283257,
+      -20.261495,
+      148.706607,
+      148.728309
+    ],
+    "display_name": "Airlie Beach, Queensland, Australia"
+  },
+  "Daydream Island": {
+    "lat": -20.255799,
+    "lng": 148.81387,
+    "bbox": [
+      -20.2607699,
+      -20.250809,
+      148.8126031,
+      148.8161149
+    ],
+    "display_name": "Daydream Island, Whitsundays, Queensland, Australia"
+  },
+  "Broome": {
+    "lat": -17.956691,
+    "lng": 122.224018,
+    "bbox": [
+      -18.1166909,
+      -17.7966909,
+      122.0640181,
+      122.3840181
+    ],
+    "display_name": "Broome, Western Australia, 6725, Australia"
+  },
+  "Clayton": {
+    "lat": -37.915802,
+    "lng": 145.131386,
+    "bbox": [
+      -37.931386,
+      -37.899152,
+      145.1075401,
+      145.151616
+    ],
+    "display_name": "Clayton, Melbourne, Victoria, 3168, Australia"
+  },
+  "Surry Hills": {
+    "lat": -33.8861,
+    "lng": 151.2111,
+    "bbox": [
+      -33.8961,
+      -33.8761,
+      151.2011,
+      151.2211
+    ],
+    "display_name": "Surry Hills, Sydney, New South Wales, 2010, Australia"
+  },
+  "Sydney CBD": {
+    "lat": -33.8688,
+    "lng": 151.2093,
+    "bbox": [
+      -33.8788,
+      -33.8588,
+      151.1993,
+      151.2193
+    ],
+    "display_name": "Sydney CBD, Sydney, New South Wales, 2000, Australia"
+  },
+  "Newtown": {
+    "lat": -33.8972,
+    "lng": 151.1793,
+    "bbox": [
+      -33.9072,
+      -33.8872,
+      151.1693,
+      151.1893
+    ],
+    "display_name": "Newtown, Inner West, Sydney, New South Wales, 2042, Australia"
+  },
+  "Darlinghurst": {
+    "lat": -33.8812,
+    "lng": 151.2185,
+    "bbox": [
+      -33.8912,
+      -33.8712,
+      151.2085,
+      151.2285
+    ],
+    "display_name": "Darlinghurst, Sydney, New South Wales, 2010, Australia"
+  }
+}

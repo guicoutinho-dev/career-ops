@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "Senior Solutions Architect (SAP S/4HANA)",
+    "company": "FinXL IT Professional Services",
+    "location": "Melbourne VIC, Australia",
+    "url": "https://www.seek.com.au/job/95543949",
+    "seek_id": "95543949"
+  },
+  "slug": "finxl-senior-solutions-architect-sap-s4hana",
+  "applicationId": "app_finxl_s4hana_architect_95543949",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_finxl_s4hana_architect_95543949",
+  "createdAt": "2026-11-03T18:10:34.386Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_finxl_s4hana_architect_95543949/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_finxl_s4hana_architect_95543949/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_finxl_s4hana_architect_95543949/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_finxl_s4hana_architect_95543949/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_finxl_s4hana_architect_95543949/checklist.md",
+    "jobDescription": "applications/app_finxl_s4hana_architect_95543949/job_description.md"
+  }
+}

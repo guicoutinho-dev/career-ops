@@ -1,0 +1,31 @@
+{
+  "job": {
+    "title": "Guest Service Agent",
+    "company": "Oaks Hotels & Resorts (Minor Hotels)",
+    "location": "Mackay QLD, Postcode 4740",
+    "postcode": "4740",
+    "req_id": "744000157960994",
+    "url": "https://jobs.smartrecruiters.com/MinorInternational/744000157960994",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Tourism & Hospitality in Northern Australia)"
+  },
+  "applicationId": "app_oaks_mackay_gsa_744000157960994",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:48:30.769891",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4740"
+  },
+  "files": {
+    "cvHtml": "applications/app_oaks_mackay_gsa_744000157960994/cv-oaks-mackay-gsa.html",
+    "cvPdf": "applications/app_oaks_mackay_gsa_744000157960994/cv-oaks-mackay-gsa.pdf",
+    "coverLetterHtml": "applications/app_oaks_mackay_gsa_744000157960994/cover-letter-oaks-mackay-gsa.html",
+    "coverLetterPdf": "applications/app_oaks_mackay_gsa_744000157960994/cover-letter-oaks-mackay-gsa.pdf",
+    "submissionProof": "applications/app_oaks_mackay_gsa_744000157960994/submission_proof.png"
+  }
+}

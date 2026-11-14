@@ -1,0 +1,81 @@
+{
+  "lang": "en",
+  "page_format": "a4",
+  "candidate": {
+    "name": "Guilherme Coutinho Xavier",
+    "phone": "+55 71 99998-5833",
+    "email": "guicoutinho.dev@gmail.com",
+    "linkedin_url": "https://www.linkedin.com/in/guicoutin/",
+    "linkedin_display": "linkedin.com/in/guicoutin",
+    "location": "Brisbane, QLD, Australia · Full Australian Working Rights (WHV Subclass 462 — No Sponsorship Required)"
+  },
+  "subtitle": "SAP ABAP CONSULTANT | ECC & S/4HANA | OO ABAP | INTEGRATIONS",
+  "summary": "SAP ABAP Consultant with 5 years of experience delivering and supporting enterprise SAP solutions across ECC and S/4HANA environments. Strong foundation in classic ABAP development, including reports, ALV, enhancements (BADIs, user exits), and module-pool applications in production-critical landscapes. Proven ability to debug SAP standard, analyze performance issues, and accelerate complex deliveries in regulated and high-volume business scenarios. Hands-on exposure to S/4HANA-aligned development (CDS Views, OData, ABAP Cloud principles, CPI). SAP-certified in ABAP Cloud, SAP BTP Solution Architecture, and SAP Business AI Platform, offering immediate technical reliability for healthcare and public sector SAP landscapes under WHV 462 in Australia.",
+  "skills": [
+    {
+      "category": "Technical Skills",
+      "items": "ABAP OO | Reports & ALV | Enhancements (BADIs, User Exits) | Module-Pool | Debugging & Performance Analysis | SAP ECC & S/4HANA | ABAP Cloud | CDS Views | OData Services | Adobe Forms | SMARTFORMS"
+    },
+    {
+      "category": "Functional Skills & Tools",
+      "items": "Sales & Distribution (SD) | FI/CO Integration | Materials Management (MM) | SAP ECC & S/4HANA | SAP Solution Manager | Transport Management (STMS) | Jira & Agile/Scrum | Application Management (AMS)"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Accenture",
+      "role": "SAP ABAP Consultant",
+      "dates": "Aug 2023 - Present",
+      "bullets": [
+        "Delivered ABAP developments and enhancements across ECC and S/4HANA landscapes for a multinational FMCG client in a production-critical environment.",
+        "Analyzed 1,260 SAP Notes related to the Brazilian Tax Reform, debugging SAP standard function modules and implementation logic, and reducing the estimated effort from 1–2 months to 3–4 days.",
+        "Developed and maintained custom ABAP reports, enhancements, CDS Views, and OData services supporting integrated SD and FI processes.",
+        "Recognized in the first year with a performance and dedication award."
+      ]
+    },
+    {
+      "company": "Deloitte",
+      "role": "SAP ABAP Consultant",
+      "dates": "Nov 2022 - Aug 2023",
+      "bullets": [
+        "Contributed to S/4HANA implementation and integration initiatives, following ABAP for HANA standards.",
+        "Developed CDS Views and AMDP logic with focus on performance optimization.",
+        "Built and exposed OData services via SAP Gateway to support system integrations.",
+        "Collaborated closely with functional teams during build, testing, and defect resolution phases.",
+        "Translated functional requirements into technical ABAP solutions, ensuring adherence to SAP best practices and project delivery standards."
+      ]
+    },
+    {
+      "company": "Softtek",
+      "role": "SAP ABAP Consultant",
+      "dates": "Feb 2022 - Nov 2022",
+      "bullets": [
+        "Supported SAP ECC environments in production-critical contexts, handling corrective maintenance and controlled enhancements.",
+        "Developed classic ABAP reports, enhancements, and integration solutions, strengthening core ABAP expertise.",
+        "Gained solid experience in debugging, transport management, and SAP support processes."
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "SAP Certified Associate - Back-End Developer - ABAP Cloud"
+    },
+    {
+      "name": "SAP Certified - Solution Architect - SAP BTP"
+    },
+    {
+      "name": "SAP Certified - Solution Architect - SAP Business AI Platform"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor’s Degree in Systems Analysis and Development",
+      "institution": "Catholic University of Salvador — Brazil"
+    }
+  ],
+  "languages": [
+    "Portuguese (Native)",
+    "English (Advanced proficiency)",
+    "Spanish (Reading and listening proficiency)"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Guest Services & Operations Team Member",
+    "company": "Voyages Indigenous Tourism Australia (Mossman Gorge Cultural Centre)",
+    "location": "Mossman Gorge, QLD, Postcode 4873",
+    "postcode": "4873",
+    "req_id": "917055",
+    "url": "https://voyages.applynow.net.au/jobs/917055",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "voyages-mossman-gorge",
+  "applicationId": "app_voyages_mossman_917055",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_voyages_mossman_917055",
+  "createdAt": "2026-11-01T22:00:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4873"
+  },
+  "files": {
+    "cvHtml": "applications/app_voyages_mossman_917055/cv-voyages-mossman-gorge.html",
+    "cvPdf": "applications/app_voyages_mossman_917055/cv-voyages-mossman-gorge.pdf",
+    "coverLetterHtml": "applications/app_voyages_mossman_917055/cover-letter-voyages-mossman-gorge.html",
+    "coverLetterPdf": "applications/app_voyages_mossman_917055/cover-letter-voyages-mossman-gorge.pdf",
+    "checklist": "applications/app_voyages_mossman_917055/checklist.md"
+  }
+}

@@ -1,0 +1,19 @@
+# Australia Job Hunter Scoring and Evaluation Weights
+weights:
+  relevant_skills: 0.30
+  mandatory_requirements: 0.20
+  work_authorization: 0.20
+  location_availability: 0.15
+  compensation_settlement: 0.10
+  listing_freshness_legitimacy: 0.05
+
+thresholds:
+  auto_qualify: 75.0
+  needs_review: 60.0
+  auto_disqualify: 59.9
+
+hard_blockers:
+  - "Requires Australian Citizenship"
+  - "Active AGSVA / Baseline / NV1 security clearance required"
+  - "6-month employer work limitation strictly incompatible with role type unless specified"
+  - "Unverified mandatory local license"

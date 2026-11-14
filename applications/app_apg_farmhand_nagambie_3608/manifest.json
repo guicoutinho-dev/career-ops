@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Farm Hands - Nagambie and Stewarton VIC",
+    "company": "APG Workforce",
+    "location": "Nagambie VIC 3608",
+    "postcode": "3608",
+    "req_id": "seek_95635034",
+    "url": "https://www.seek.com.au/job/95635034",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4)"
+  },
+  "slug": "apg-farmhand-nagambie",
+  "applicationId": "app_apg_farmhand_nagambie_3608",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_apg_farmhand_nagambie_3608",
+  "createdAt": "2026-11-02T23:24:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3608"
+  },
+  "files": {
+    "cvHtml": "applications/app_apg_farmhand_nagambie_3608/cv-apg-farmhand-nagambie.html",
+    "cvPdf": "applications/app_apg_farmhand_nagambie_3608/cv-apg-farmhand-nagambie.pdf",
+    "coverLetterHtml": "applications/app_apg_farmhand_nagambie_3608/cover-letter-apg-farmhand-nagambie.html",
+    "coverLetterPdf": "applications/app_apg_farmhand_nagambie_3608/cover-letter-apg-farmhand-nagambie.pdf",
+    "jobDescription": "applications/app_apg_farmhand_nagambie_3608/job_description.md"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "Senior Consultant - SAP S/4HANA Public Cloud Edition",
+    "company": "FUJIFILM MicroChannel Services Pty Ltd",
+    "location": "Sydney NSW, Australia",
+    "url": "https://www.seek.com.au/job/95321606",
+    "seek_id": "95321606"
+  },
+  "slug": "fujifilm-senior-consultant-sap-s4hana-cloud",
+  "applicationId": "app_fujifilm_s4hana_cloud_95321606",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_fujifilm_s4hana_cloud_95321606",
+  "createdAt": "2026-11-03T18:10:37.262Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_fujifilm_s4hana_cloud_95321606/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_fujifilm_s4hana_cloud_95321606/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_fujifilm_s4hana_cloud_95321606/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_fujifilm_s4hana_cloud_95321606/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_fujifilm_s4hana_cloud_95321606/checklist.md",
+    "jobDescription": "applications/app_fujifilm_s4hana_cloud_95321606/job_description.md"
+  }
+}

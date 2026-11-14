@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guilherme Coutinho Xavier — CV</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 8.2pt;
+    line-height: 1.4;
+    color: #000000;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 3px;
+  }
+
+  .header h1 {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 27pt;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 5px;
+  }
+
+  .contact-row {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    color: #000000;
+    margin-bottom: 3px;
+  }
+
+  .contact-location {
+    font-size: 8.2pt;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+
+  .contact-links {
+    font-size: 8.2pt;
+    color: #000000;
+  }
+
+  .contact-links a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .contact-links .separator {
+    color: #000000;
+    margin: 0 4px;
+  }
+
+  /* === DIVIDER LINES === */
+  .divider {
+    border-bottom: 0.75pt solid #000000;
+    margin: 7px 0;
+  }
+
+  /* === SUBTITLE / TARGET ROLE === */
+  .cv-subtitle {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  .summary-text {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    color: #000000;
+    text-align: justify;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 3px;
+  }
+
+  .section-title {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  /* === SKILLS COMPACT GRID === */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .skill-item {
+    font-size: 8.2pt;
+    line-height: 1.42;
+  }
+
+  .skill-category {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  /* === WORK EXPERIENCE === */
+  .job {
+    margin-bottom: 5px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 8.2pt;
+    margin-bottom: 1px;
+  }
+
+  .job-company {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .job-period {
+    font-size: 8.2pt;
+    color: #000000;
+  }
+
+  .job-role {
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    font-size: 8.2pt;
+    margin-bottom: 2px;
+  }
+
+  .bullets {
+    list-style-type: disc;
+    padding-left: 14px;
+  }
+
+  .bullets li {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    color: #000000;
+    margin-bottom: 1.5px;
+    text-align: justify;
+  }
+
+  /* === EDUCATION & CERTIFICATIONS / LANGUAGES === */
+  .footer-columns {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer-col-left {
+    flex: 2.8;
+  }
+
+  .footer-col-right {
+    flex: 1.2;
+  }
+
+  .edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 8.2pt;
+    line-height: 1.42;
+    margin-bottom: 2px;
+  }
+
+  .edu-degree {
+    font-weight: 700;
+  }
+
+  .edu-year {
+    font-size: 8.2pt;
+  }
+
+  .edu-org {
+    font-size: 8.2pt;
+    margin-bottom: 3px;
+  }
+
+  .cert-row {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    margin-bottom: 2px;
+  }
+
+  .lang-item {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    margin-bottom: 2px;
+  }
+
+  /* === PRINT STYLES === */
+  @page {
+    size: A4 portrait;
+    margin: 8mm 9mm 8mm 9mm;
+  }
+
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .page {
+      max-width: none;
+      width: 100%;
+    }
+
+    .job, .skill-item, .footer-columns {
+      page-break-inside: avoid;
+    }
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Guilherme Coutinho Xavier</h1>
+    <div class="contact-row">
+      <div class="contact-location">Brisbane, QLD, Australia · Full Australian Working Rights (WHV Subclass 462 — No Sponsorship Required)</div>
+      <div class="contact-links"><a href="tel:+557199998-5833">+55 71 99998-5833</a> <span class="separator">|</span> <a href="mailto:guicoutinho.dev@gmail.com">guicoutinho.dev@gmail.com</a> <span class="separator">|</span> <a href="https://www.linkedin.com/in/guicoutin/" target="_blank" rel="noopener">linkedin.com/in/guicoutin</a></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SUBTITLE & PROFESSIONAL SUMMARY -->
+  <div class="sr-only section-title">Professional Summary</div>
+  <div class="cv-subtitle">SAP FIORI FULL STACK DEVELOPER | SAPUI5 | ODATA GATEWAY | ABAP BACKEND | ECC &amp; S/4HANA</div>
+  <div class="summary-text">Full Stack SAP Fiori and ABAP Developer with 5 years of enterprise delivery experience across SAP ECC and S/4HANA environments at Accenture and Deloitte. Holds a Bachelor of Science in Software Engineering and three official SAP certifications (ABAP Cloud, BTP Solution Architect, SAP Business AI). Proven track record developing responsive SAPUI5 applications, designing and maintaining robust OData Gateway services, and implementing high-performance backend ABAP logic following modern clean-code principles and Git workflows.</div>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+    <div class="skill-item"><span class="skill-category"><strong>Frontend &amp; Integration:</strong></span> SAPUI5 | SAP Fiori Elements | Responsive Design (Desktop &amp; Mobile) | OData Services | REST APIs | JavaScript | HTML5 / CSS3</div>
+    <div class="skill-item"><span class="skill-category"><strong>Backend &amp; Architecture:</strong></span> ABAP OO | SAP ECC EHP8 &amp; S/4HANA | CDS Views | AMDP | SAP Gateway | Clean Code | Git / GitHub | Unit Testing (TDD)</div>
+  </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    <div class="job">
+    <div class="job-header">
+      <span class="job-company">Accenture</span>
+      <span class="job-period">Aug 2023 - Present</span>
+    </div>
+    <div class="job-role">SAP Full Stack &amp; ABAP Consultant</div>
+    <ul class="bullets">
+      <li>Delivered full stack SAP Fiori and ABAP solutions supporting business-critical retail and consumer goods operations in ECC and S/4HANA.</li>
+      <li>Designed, developed, and maintained robust OData services via SAP Gateway and cloud endpoints, enabling real-time data binding for modern web apps.</li>
+      <li>Engineered high-performance CDS Views and AMDP procedures, optimizing query execution and backend response times for front-end consumption.</li>
+      <li>Automated complex technical analysis across 1,260+ SAP Notes using custom scripting, reducing manual assessment timeframes from months to 3-4 days.</li>
+      <li>Applied software engineering best practices including Git branching workflows, peer code reviews, and structured unit testing for enterprise reliability.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Deloitte</span>
+      <span class="job-period">Feb 2021 - Aug 2023</span>
+    </div>
+    <div class="job-role">SAP Developer</div>
+    <ul class="bullets">
+      <li>Built and exposed OData Gateway services and custom RFC/BAPI wrappers connecting SAP backend modules (SD, MM, FI) with external platforms.</li>
+      <li>Developed modular ABAP components, custom enhancements (BADIs, User Exits), and dynamic reporting tools across S/4HANA migration projects.</li>
+      <li>Conducted performance analysis, database trace analysis (ST05), and runtime profiling (SAT) to optimize interface payloads and data processing.</li>
+      <li>Collaborated with functional analysts, UX leads, and QA testers to translate business requirements into technical design specifications.</li>
+      <li>Maintained technical documentation and supported defect remediation throughout System Integration Testing (SIT) and User Acceptance Testing (UAT).</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Self-Employed / Independent</span>
+      <span class="job-period">Oct 2019 - Feb 2021</span>
+    </div>
+    <div class="job-role">SAP Developer</div>
+    <ul class="bullets">
+      <li>Delivered custom ALV interactive reports, transactional enhancements, and print layouts using SAPscript and SmartForms.</li>
+      <li>Developed custom user validation routines and batch data communication (BDC) interfaces for client system cutovers.</li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION & CERTIFICATIONS | LANGUAGES -->
+  <div class="section">
+    <div class="footer-columns">
+      <div class="footer-col-left">
+        <div class="section-title">Education &amp; Certifications</div>
+        <div class="edu-item">
+          <span class="edu-degree">Bachelor of Science in Software Engineering</span>
+          <span class="edu-year">Graduated Dec 2023</span>
+        </div>
+        <div class="edu-org">Universidade Católica do Salvador (UCSAL)</div>
+        <div class="cert-row"><strong>Official Certifications:</strong> SAP Certified Associate - Back-End Developer - ABAP Cloud · SAP Certified Associate - SAP BTP Solution Architect · SAP Certified Associate - SAP Business AI Platform</div>
+      </div>
+      <div class="footer-col-right">
+        <div class="section-title">Languages</div>
+        <div class="lang-item"><strong>Portuguese:</strong> Native</div>
+        <div class="lang-item"><strong>English:</strong> Professional Working Proficiency</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

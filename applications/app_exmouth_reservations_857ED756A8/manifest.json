@@ -1,0 +1,36 @@
+{
+  "job": {
+    "title": "Reservations / Retail Sales Officer",
+    "company": "Journey Beyond / Exmouth Dive & Whalesharks Ningaloo",
+    "location": "Exmouth, WA, Postcode 6707",
+    "postcode": "6707",
+    "req_id": "857ED756A8",
+    "url": "https://apply.workable.com/journey-beyond/j/857ED756A8/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "exmouth-reservations-retail",
+  "applicationId": "app_exmouth_reservations_857ED756A8",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_exmouth_reservations_857ED756A8",
+  "createdAt": "2026-11-01T23:49:00.000Z",
+  "status": "APPLIED",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "6707"
+  },
+  "files": {
+    "cvHtml": "applications/app_exmouth_reservations_857ED756A8/cv-exmouth-reservations-retail.html",
+    "cvPdf": "applications/app_exmouth_reservations_857ED756A8/cv-exmouth-reservations-retail.pdf",
+    "coverLetterHtml": "applications/app_exmouth_reservations_857ED756A8/cover-letter-exmouth-reservations-retail.html",
+    "coverLetterPdf": "applications/app_exmouth_reservations_857ED756A8/cover-letter-exmouth-reservations-retail.pdf",
+    "checklist": "applications/app_exmouth_reservations_857ED756A8/checklist.md",
+    "submissionProof": "applications/app_exmouth_reservations_857ED756A8/submission_proof.png"
+  },
+  "submittedAt": "2026-11-02T20:07:54.065Z"
+}

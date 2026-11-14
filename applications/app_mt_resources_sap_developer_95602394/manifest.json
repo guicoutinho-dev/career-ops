@@ -1,0 +1,18 @@
+{
+  "application_id": "app_mt_resources_sap_developer_95602394",
+  "row_num": "113",
+  "job_id": "seek_95602394",
+  "company": "M&T Resources",
+  "role": "SAP Developer (S/4HANA & ABAP)",
+  "location": "Melbourne VIC / Hybrid Australia",
+  "score": 4.8,
+  "status": "APPLIED",
+  "applied_date": "2026-11-03",
+  "files": {
+    "cv_html": "cv-guilherme-coutinho.html",
+    "cv_pdf": "cv-guilherme-coutinho.pdf",
+    "cover_letter_html": "cover-letter-guilherme-coutinho.html",
+    "cover_letter_pdf": "cover-letter-guilherme-coutinho.pdf",
+    "job_description": "job_description.md"
+  }
+}

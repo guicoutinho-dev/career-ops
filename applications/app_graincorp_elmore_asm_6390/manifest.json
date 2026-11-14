@@ -1,0 +1,29 @@
+{
+  "job": {
+    "title": "Assistant Site Manager - Elmore",
+    "company": "GrainCorp",
+    "location": "Elmore, VIC 3558",
+    "postcode": "3558",
+    "req_id": "6390",
+    "url": "https://jobs.graincorp.com.au/job/Elmore-Assistant-Site-Manager-Elmore-Vict/6390/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Regional VIC Grain Handling)"
+  },
+  "applicationId": "app_graincorp_elmore_asm_6390",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:02:22.122559",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3558"
+  },
+  "files": {
+    "cvPdf": "applications/app_graincorp_elmore_asm_6390/cv-graincorp.pdf",
+    "coverLetterPdf": "applications/app_graincorp_elmore_asm_6390/cover-letter-graincorp.pdf",
+    "submissionProof": "applications/app_graincorp_elmore_asm_6390/submission_proof.png"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Guest Service Agent",
+    "company": "Daydream Island Resort",
+    "location": "Daydream Island QLD 4741",
+    "postcode": "4741",
+    "req_id": "seek_95641614",
+    "url": "https://www.seek.com.au/job/95641614",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Northern Australia Tourism & Hospitality Table 1)"
+  },
+  "slug": "daydream-island-gsa",
+  "applicationId": "app_daydream_island_gsa_95641614",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_daydream_island_gsa_95641614",
+  "createdAt": "2026-11-02T23:39:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4741"
+  },
+  "files": {
+    "cvHtml": "applications/app_daydream_island_gsa_95641614/cv-daydream-island-gsa.html",
+    "cvPdf": "applications/app_daydream_island_gsa_95641614/cv-daydream-island-gsa.pdf",
+    "coverLetterHtml": "applications/app_daydream_island_gsa_95641614/cover-letter-daydream-island-gsa.html",
+    "coverLetterPdf": "applications/app_daydream_island_gsa_95641614/cover-letter-daydream-island-gsa.pdf",
+    "jobDescription": "applications/app_daydream_island_gsa_95641614/job_description.md"
+  }
+}

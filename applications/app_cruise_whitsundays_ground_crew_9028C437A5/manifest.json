@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Ground Crew",
+    "company": "Journey Beyond / Cruise Whitsundays",
+    "location": "Airlie Beach, Whitsundays QLD, Postcode 4802",
+    "postcode": "4802",
+    "req_id": "9028C437A5",
+    "url": "https://apply.workable.com/journey-beyond/j/9028C437A5/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "cruise-whitsundays-ground-crew",
+  "applicationId": "app_cruise_whitsundays_ground_crew_9028C437A5",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_cruise_whitsundays_ground_crew_9028C437A5",
+  "createdAt": "2026-11-01T23:52:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4802"
+  },
+  "files": {
+    "cvHtml": "applications/app_cruise_whitsundays_ground_crew_9028C437A5/cv-cruise-whitsundays-ground-crew.html",
+    "cvPdf": "applications/app_cruise_whitsundays_ground_crew_9028C437A5/cv-cruise-whitsundays-ground-crew.pdf",
+    "coverLetterHtml": "applications/app_cruise_whitsundays_ground_crew_9028C437A5/cover-letter-cruise-whitsundays-ground-crew.html",
+    "coverLetterPdf": "applications/app_cruise_whitsundays_ground_crew_9028C437A5/cover-letter-cruise-whitsundays-ground-crew.pdf",
+    "checklist": "applications/app_cruise_whitsundays_ground_crew_9028C437A5/checklist.md"
+  }
+}

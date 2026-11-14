@@ -1,0 +1,23 @@
+# Australia Job Hunter Human Approval Policy
+policy:
+  mode: "strict_human_approval_only"
+  allowed_auto_submissions: false
+  allowed_auto_emails: false
+
+requirements_for_approval_package:
+  - "employer_name"
+  - "job_title"
+  - "job_url"
+  - "job_description_hash"
+  - "match_score"
+  - "cv_pdf_hash"
+  - "cover_letter_pdf_hash"
+  - "application_answers"
+  - "work_authorization_declarations"
+
+invalidation_triggers:
+  - "job_description_updated"
+  - "cv_modified"
+  - "cover_letter_modified"
+  - "answers_modified"
+  - "destination_endpoint_changed"

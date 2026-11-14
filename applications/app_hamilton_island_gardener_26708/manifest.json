@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Gardener",
+    "company": "Hamilton Island Enterprises",
+    "location": "Hamilton Island, Whitsundays QLD, Postcode 4803",
+    "postcode": "4803",
+    "req_id": "26708",
+    "url": "https://phh.tbe.taleo.net/phh04/ats/careers/v2/viewRequisition?org=HAMILTONISLAND&cws=42&rid=26708",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 1 Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "hamilton-island-gardener",
+  "applicationId": "app_hamilton_island_gardener_26708",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_hamilton_island_gardener_26708",
+  "createdAt": "2026-11-01T21:34:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4803"
+  },
+  "files": {
+    "cvHtml": "applications/app_hamilton_island_gardener_26708/cv-hamilton-island-gardener.html",
+    "cvPdf": "applications/app_hamilton_island_gardener_26708/cv-hamilton-island-gardener.pdf",
+    "coverLetterHtml": "applications/app_hamilton_island_gardener_26708/cover-letter-hamilton-island-gardener.html",
+    "coverLetterPdf": "applications/app_hamilton_island_gardener_26708/cover-letter-hamilton-island-gardener.pdf",
+    "checklist": "applications/app_hamilton_island_gardener_26708/checklist.md"
+  }
+}

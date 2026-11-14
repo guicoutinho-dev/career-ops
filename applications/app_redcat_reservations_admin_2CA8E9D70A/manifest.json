@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Reservations Administrator",
+    "company": "Journey Beyond / Red Cat Adventures",
+    "location": "Airlie Beach / Whitsundays, QLD, Postcode 4802",
+    "postcode": "4802",
+    "req_id": "2CA8E9D70A",
+    "url": "https://apply.workable.com/journey-beyond/j/2CA8E9D70A/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "redcat-reservations-admin",
+  "applicationId": "app_redcat_reservations_admin_2CA8E9D70A",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_redcat_reservations_admin_2CA8E9D70A",
+  "createdAt": "2026-11-01T23:08:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4802"
+  },
+  "files": {
+    "cvHtml": "applications/app_redcat_reservations_admin_2CA8E9D70A/cv-redcat-reservations-admin.html",
+    "cvPdf": "applications/app_redcat_reservations_admin_2CA8E9D70A/cv-redcat-reservations-admin.pdf",
+    "coverLetterHtml": "applications/app_redcat_reservations_admin_2CA8E9D70A/cover-letter-redcat-reservations-admin.html",
+    "coverLetterPdf": "applications/app_redcat_reservations_admin_2CA8E9D70A/cover-letter-redcat-reservations-admin.pdf",
+    "checklist": "applications/app_redcat_reservations_admin_2CA8E9D70A/checklist.md"
+  }
+}

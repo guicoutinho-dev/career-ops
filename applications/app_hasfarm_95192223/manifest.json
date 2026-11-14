@@ -1,0 +1,33 @@
+{
+  "job": {
+    "title": "SAP S/4 Integration Specialist",
+    "company": "Hasfarm Australia",
+    "location": "Ingleburn, Sydney NSW",
+    "url": "https://www.seek.com.au/id/job/95192223",
+    "seek_id": "95192223"
+  },
+  "slug": "hasfarm-australia-sap-s4-integration-specialist",
+  "applicationId": "app_hasfarm_95192223",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_hasfarm_95192223",
+  "createdAt": "2026-10-27T18:30:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_hasfarm_95192223/cv-hasfarm-australia-sap-s4-integration-specialist.html",
+    "cvPdf": "applications/app_hasfarm_95192223/cv-hasfarm-australia-sap-s4-integration-specialist.pdf",
+    "coverLetterHtml": "applications/app_hasfarm_95192223/cover-letter-hasfarm-australia-sap-s4-integration-specialist.html",
+    "coverLetterPdf": "applications/app_hasfarm_95192223/cover-letter-hasfarm-australia-sap-s4-integration-specialist.pdf",
+    "answers": "applications/app_hasfarm_95192223/answers.json",
+    "checklist": "applications/app_hasfarm_95192223/checklist.md",
+    "jobDescription": "applications/app_hasfarm_95192223/job_description.md"
+  }
+}

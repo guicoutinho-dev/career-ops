@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Operations Coordinator",
+    "company": "Journey Beyond / Red Cat Adventures",
+    "location": "Airlie Beach, Whitsundays QLD, Postcode 4802",
+    "postcode": "4802",
+    "req_id": "74346A50AB",
+    "url": "https://apply.workable.com/journey-beyond/j/74346A50AB/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "redcat-ops-coord",
+  "applicationId": "app_redcat_ops_coord_74346A50AB",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_redcat_ops_coord_74346A50AB",
+  "createdAt": "2026-11-01T23:52:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4802"
+  },
+  "files": {
+    "cvHtml": "applications/app_redcat_ops_coord_74346A50AB/cv-redcat-ops-coord.html",
+    "cvPdf": "applications/app_redcat_ops_coord_74346A50AB/cv-redcat-ops-coord.pdf",
+    "coverLetterHtml": "applications/app_redcat_ops_coord_74346A50AB/cover-letter-redcat-ops-coord.html",
+    "coverLetterPdf": "applications/app_redcat_ops_coord_74346A50AB/cover-letter-redcat-ops-coord.pdf",
+    "checklist": "applications/app_redcat_ops_coord_74346A50AB/checklist.md"
+  }
+}

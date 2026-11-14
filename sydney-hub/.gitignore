@@ -1,0 +1,9 @@
+data/
+__pycache__/
+.pytest_cache/
+*.pyc
+config/settings.yml
+web/seed/jobs.json
+web/seed/listings.json
+web/index.html
+web/inspect_titles.py

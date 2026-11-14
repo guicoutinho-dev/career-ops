@@ -1,0 +1,39 @@
+{
+  "job": {
+    "title": "Tractor Driver Operator (Apple Orchard)",
+    "company": "Stoneview Orchards",
+    "location": "Elphinstone, Bendigo, Goldfields & Macedon Ranges VIC, Elphinstone VIC 3448",
+    "postcode": "3448",
+    "url": "https://www.seek.com.au/job/95587262",
+    "seek_id": "95587262",
+    "remuneration": "$35 per hour",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible)"
+  },
+  "slug": "stoneview-orchards-tractor-driver-operator",
+  "applicationId": "app_stoneview_95587262",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_stoneview_95587262",
+  "createdAt": "2026-11-01T15:05:00.000Z",
+  "status": "disqualified_tractor_rule",
+  "auditCorrectionApplied": true,
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "zeroMachineryFabrication": true,
+    "reenquadramento": "OPERATIONAL ASSISTANT & FIELD WORKER",
+    "postcodeVerified": "3448"
+  },
+  "files": {
+    "cvHtml": "applications/app_stoneview_95587262/cv-stoneview-orchards-tractor-driver-operator.html",
+    "cvPdf": "applications/app_stoneview_95587262/cv-stoneview-orchards-tractor-driver-operator.pdf",
+    "coverLetterHtml": "applications/app_stoneview_95587262/cover-letter-stoneview-orchards-tractor-driver-operator.html",
+    "coverLetterPdf": "applications/app_stoneview_95587262/cover-letter-stoneview-orchards-tractor-driver-operator.pdf",
+    "answers": "applications/app_stoneview_95587262/answers.json",
+    "checklist": "applications/app_stoneview_95587262/checklist.md",
+    "jobDescription": "applications/app_stoneview_95587262/job_description.md"
+  }
+}

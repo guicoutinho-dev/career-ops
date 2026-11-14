@@ -1,0 +1,37 @@
+{
+  "job": {
+    "title": "House Attendant",
+    "company": "Daydream Island Resort",
+    "location": "Daydream Island, Whitsundays QLD, Daydream Island QLD 4741",
+    "postcode": "4741",
+    "url": "https://www.seek.com.au/job/95604671",
+    "seek_id": "95604671",
+    "remuneration": "Award / Hourly Rate",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Tourism & Hospitality in Northern Australia)"
+  },
+  "slug": "daydream-island-resort-house-attendant",
+  "applicationId": "app_daydream_island_95604671",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_daydream_island_95604671",
+  "createdAt": "2026-11-01T21:12:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "4741"
+  },
+  "files": {
+    "cvHtml": "applications/app_daydream_island_95604671/cv-daydream-island-resort-house-attendant.html",
+    "cvPdf": "applications/app_daydream_island_95604671/cv-daydream-island-resort-house-attendant.pdf",
+    "coverLetterHtml": "applications/app_daydream_island_95604671/cover-letter-daydream-island-resort-house-attendant.html",
+    "coverLetterPdf": "applications/app_daydream_island_95604671/cover-letter-daydream-island-resort-house-attendant.pdf",
+    "answers": "applications/app_daydream_island_95604671/answers.json",
+    "checklist": "applications/app_daydream_island_95604671/checklist.md",
+    "jobDescription": "applications/app_daydream_island_95604671/job_description.md"
+  }
+}

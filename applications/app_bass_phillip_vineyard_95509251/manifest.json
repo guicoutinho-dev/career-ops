@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Vineyard & Property Worker",
+    "company": "Bass Phillip Wines",
+    "location": "Leongatha VIC 3953",
+    "postcode": "3953",
+    "req_id": "seek_95509251",
+    "url": "https://www.seek.com.au/job/95509251",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant Cultivation)"
+  },
+  "slug": "bass-phillip-vineyard-worker-leongatha",
+  "applicationId": "app_seek_95509251",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_bass_phillip_vineyard_95509251",
+  "createdAt": "2026-11-02T23:55:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3953"
+  },
+  "files": {
+    "cvHtml": "applications/app_bass_phillip_vineyard_95509251/cv-gilherme-bass-phillip-vineyard.html",
+    "cvPdf": "applications/app_bass_phillip_vineyard_95509251/cv-gilherme-bass-phillip-vineyard.pdf",
+    "coverLetterHtml": "applications/app_bass_phillip_vineyard_95509251/cover-letter-bass-phillip.html",
+    "coverLetterPdf": "applications/app_bass_phillip_vineyard_95509251/cover-letter-bass-phillip.pdf",
+    "jobDescription": "applications/app_bass_phillip_vineyard_95509251/job_description.md"
+  }
+}

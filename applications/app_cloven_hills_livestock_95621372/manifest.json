@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Farmhand – Livestock (Sheep)",
+    "company": "Cloven Hills",
+    "location": "Nareen VIC 3315",
+    "postcode": "3315",
+    "req_id": "seek_whv_95621372",
+    "url": "https://www.seek.com.au/job/95621372",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant & Animal Cultivation)"
+  },
+  "slug": "cloven-hills-farmhand-nareen",
+  "applicationId": "app_seek_whv_95621372",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_cloven_hills_livestock_95621372",
+  "createdAt": "2026-11-02T23:50:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3315"
+  },
+  "files": {
+    "cvHtml": "applications/app_cloven_hills_livestock_95621372/cv-gilherme-sheep-farmhand.html",
+    "cvPdf": "applications/app_cloven_hills_livestock_95621372/cv-gilherme-sheep-farmhand.pdf",
+    "coverLetterHtml": "applications/app_cloven_hills_livestock_95621372/cover-letter-cloven-hills.html",
+    "coverLetterPdf": "applications/app_cloven_hills_livestock_95621372/cover-letter-cloven-hills.pdf",
+    "jobDescription": "applications/app_cloven_hills_livestock_95621372/job_description.md"
+  }
+}

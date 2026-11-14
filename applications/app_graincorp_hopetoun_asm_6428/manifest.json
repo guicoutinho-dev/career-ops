@@ -1,0 +1,29 @@
+{
+  "job": {
+    "title": "Assistant Site Manager - Hopetoun",
+    "company": "GrainCorp",
+    "location": "Hopetoun, VIC 3396",
+    "postcode": "3396",
+    "req_id": "6428",
+    "url": "https://jobs.graincorp.com.au/job/Hopetoun-Assistant-Site-Manager-Hopetoun-Vict/6428/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Regional VIC Grain Handling)"
+  },
+  "applicationId": "app_graincorp_hopetoun_asm_6428",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:02:22.126668",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3396"
+  },
+  "files": {
+    "cvPdf": "applications/app_graincorp_hopetoun_asm_6428/cv-graincorp.pdf",
+    "coverLetterPdf": "applications/app_graincorp_hopetoun_asm_6428/cover-letter-graincorp.pdf",
+    "submissionProof": "applications/app_graincorp_hopetoun_asm_6428/submission_proof.png"
+  }
+}

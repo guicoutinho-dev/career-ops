@@ -1,0 +1,377 @@
+<!-- career-ops-template
+name: Guilherme Executive Minimalist
+format: html
+author: Guilherme Coutinho Xavier
+description: Exact Canva 1-page layout with minimalist Swiss monochrome lines, executive header, and two-column education/languages footer.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guilherme Coutinho Xavier — CV</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 8.2pt;
+    line-height: 1.4;
+    color: #000000;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 3px;
+  }
+
+  .header h1 {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif;
+    font-size: 27pt;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 5px;
+  }
+
+  .contact-row {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    color: #000000;
+    margin-bottom: 3px;
+  }
+
+  .contact-location {
+    font-size: 8.2pt;
+    color: #000000;
+    margin-bottom: 2px;
+  }
+
+  .contact-links {
+    font-size: 8.2pt;
+    color: #000000;
+  }
+
+  .contact-links a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .contact-links .separator {
+    color: #000000;
+    margin: 0 4px;
+  }
+
+  /* === DIVIDER LINES === */
+  .divider {
+    border-bottom: 0.75pt solid #000000;
+    margin: 7px 0;
+  }
+
+  /* === SUBTITLE / TARGET ROLE === */
+  .cv-subtitle {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 4px;
+  }
+
+  .summary-text {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    color: #000000;
+    text-align: justify;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 3px;
+  }
+
+  .section-title {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+
+  /* === SKILLS === */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 8.2pt;
+    line-height: 1.42;
+  }
+
+  .skill-item strong {
+    font-weight: 700;
+  }
+
+  /* === EXPERIENCE === */
+  .job {
+    margin-bottom: 7px;
+  }
+
+  .job:last-child {
+    margin-bottom: 0;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .job-company {
+    font-size: 8.8pt;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .job-period {
+    font-size: 8.2pt;
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .job-role {
+    font-size: 8.2pt;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 3px;
+  }
+
+  .job ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .job li {
+    position: relative;
+    padding-left: 14px;
+    font-size: 8.2pt;
+    line-height: 1.42;
+    color: #000000;
+    margin-bottom: 2px;
+    text-align: justify;
+  }
+
+  .job li::before {
+    content: "•";
+    position: absolute;
+    left: 4px;
+    top: 0;
+    color: #000000;
+    font-size: 8pt;
+  }
+
+  /* === FOOTER TWO-COLUMN: EDUCATION & CERTIFICATIONS | LANGUAGES === */
+  .footer-columns {
+    display: flex;
+    gap: 15px;
+  }
+
+  .footer-col-left {
+    flex: 2.8;
+  }
+
+  .footer-col-right {
+    flex: 1.2;
+  }
+
+  .edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 8.2pt;
+    line-height: 1.42;
+    margin-bottom: 2px;
+  }
+
+  .edu-degree {
+    font-weight: 700;
+  }
+
+  .edu-year {
+    font-size: 8.2pt;
+  }
+
+  .edu-org {
+    font-size: 8.2pt;
+    margin-bottom: 3px;
+  }
+
+  .cert-row {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    margin-bottom: 2px;
+  }
+
+  .lang-item {
+    font-size: 8.2pt;
+    line-height: 1.42;
+    margin-bottom: 2px;
+  }
+
+  /* === PRINT STYLES === */
+  @page {
+    size: A4 portrait;
+    margin: 8mm 9mm 8mm 9mm;
+  }
+
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .page {
+      max-width: none;
+      width: 100%;
+    }
+
+    .job, .skill-item, .footer-columns {
+      page-break-inside: avoid;
+    }
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Guilherme Coutinho Xavier</h1>
+    <div class="contact-row">
+      <div class="contact-location">Gold Coast, QLD, Australia - Full Australian Working Rights (WHV Subclass 462 - No Sponsorship Required)</div>
+      <div class="contact-links"><a href="tel:+557199998-5833">+55 71 99998-5833</a> <span class="separator">|</span> <a href="mailto:guicoutinho.dev@gmail.com">guicoutinho.dev@gmail.com</a> <span class="separator">|</span> <a href="https://www.linkedin.com/in/guicoutin/" target="_blank" rel="noopener">linkedin.com/in/guicoutin</a></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SUBTITLE & PROFESSIONAL SUMMARY -->
+  <div class="sr-only section-title">Professional Summary</div>
+  <div class="cv-subtitle">SOFTWARE ENGINEER – SAP ABAP | OO ABAP | ALV | SMARTFORMS | ODY/GATEWAY</div>
+  <div class="summary-text">SAP ABAP Software Engineer with 5 years of solid consulting experience across SAP ECC and S/4HANA environments. Certified in ABAP Cloud and SAP BTP Solution Architecture, specializing in OO ABAP, RICEFW development, ALV reporting (Grid &amp; Classical), BADIs/Enhancements, and OData Gateway services.</div>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Skills</div>
+    <div class="skills-grid">
+    <div class="skill-item"><span class="skill-category"><strong>SAP Technical:</strong></span> ABAP OO | ALV Reports (Grid/Classical) | SmartForms &amp; Adobe Forms | BADIs &amp; User Exits | RFC/BAPI | OData / SAP Gateway | CDS Views</div>
+    <div class="skill-item"><span class="skill-category"><strong>Platforms &amp; Architecture:</strong></span> SAP S/4HANA | SAP ECC 6.0 | SAP BTP | ABAP Cloud | Web Dynpro ABAP | ABAP Unit Testing (TDD)</div>
+  </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    <div class="job">
+    <div class="job-header">
+      <span class="job-company">Accenture</span>
+      <span class="job-period">Aug 2023 - Present</span>
+    </div>
+    <div class="job-role">SAP ABAP Consultant</div>
+    <ul>
+        <li>Engineered enterprise ABAP developments and enhancements in SAP ECC and S/4HANA environments for multinational consumer goods client (FMCG).</li>
+        <li>Developed custom ALV reporting tools, interactive dialog modules, BADIs, and User Exits supporting business-critical SD and FI workflows.</li>
+        <li>Spearheaded technical analysis of 1,260 SAP Notes via deep function module debugging and automated code inspection routines.</li>
+        <li>Constructed OData services via SAP Gateway to interface SAP ERP core with external systems.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Deloitte</span>
+      <span class="job-period">Nov 2022 - Aug 2023</span>
+    </div>
+    <div class="job-role">SAP ABAP Consultant</div>
+    <ul>
+        <li>Delivered technical development within S/4HANA implementation and greenfield integration initiatives.</li>
+        <li>Built database-optimized CDS Views, AMDP logic, and custom RFC function modules following ABAP on HANA standards.</li>
+        <li>Designed SmartForms and output management routines for operational supply chain and billing documentation.</li>
+        <li>Implemented automated ABAP Unit testing routines and test-driven refactoring ensuring zero defect leakage.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <span class="job-company">Softtek</span>
+      <span class="job-period">Feb 2022 - Nov 2022</span>
+    </div>
+    <div class="job-role">SAP ABAP Consultant</div>
+    <ul>
+        <li>Executed corrective maintenance and controlled enhancements across business-critical SAP ECC production systems.</li>
+        <li>Developed classical and interactive ALV reports, BDC routines for data migration, and enhancement spots.</li>
+        <li>Managed transport requests (STMS), performance tuning using SQL Trace (ST05), and runtime analysis (SAT).</li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- FOOTER TWO-COLUMN: EDUCATION & CERTIFICATIONS | LANGUAGES -->
+  <div class="footer-columns">
+    <div class="footer-col-left">
+      <div class="section-title">Education &amp; Certifications</div>
+      <div class="edu-item">
+        <span class="edu-degree">Bachelor of Technology — Systems Analysis &amp; Development</span>
+      </div>
+      <div class="edu-org">Universidade Catolica do Salvador</div>
+      <div class="cert-row"><strong>Certifications:</strong> SAP Certified Associate - Back-End Developer - ABAP Cloud (2025) <span class="separator">|</span> SAP Certified Solution Architect - SAP BTP (2025) <span class="separator">|</span> SAP Certified Solution Architect - SAP Business AI Platform (2025)</div>
+    </div>
+    <div class="footer-col-right">
+      <div class="section-title">Languages &amp; Rights</div>
+      <div class="lang-item"><strong>English:</strong> Full Professional Proficiency</div>
+      <div class="lang-item"><strong>Portuguese:</strong> Native</div>
+      <div class="lang-item"><strong>Work Rights:</strong> WHV 462 (Independent, No Sponsorship)</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

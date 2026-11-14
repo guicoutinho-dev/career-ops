@@ -1,0 +1,28 @@
+{
+  "id": "20261027-011354-4dd101110c",
+  "questionHash": "4dd101b33394",
+  "questionChars": 163,
+  "portal": "ChatGPT_Consultas",
+  "approvedVia": "flag --approve",
+  "createdAt": "2026-10-27T01:13:54.938Z",
+  "state": "failed-portal-error",
+  "sent": false,
+  "strategy": null,
+  "history": [
+    {
+      "s": "approved",
+      "t": "2026-10-27T01:13:54.938Z"
+    },
+    {
+      "s": "failed-portal-error",
+      "t": "2026-10-27T01:14:15.232Z"
+    }
+  ],
+  "diagnostic": {
+    "code": "portal-error",
+    "message": "maestri portal evaluate: timeout"
+  },
+  "finishedAt": "2026-10-27T01:14:15.232Z",
+  "exitCode": 4,
+  "responseChars": 0
+}

@@ -1,0 +1,34 @@
+{
+  "job": {
+    "title": "Plant Operator - Casual - Numurkah",
+    "company": "GrainCorp",
+    "location": "Numurkah, VIC, Postcode 3636",
+    "postcode": "3636",
+    "req_id": "1367794866",
+    "url": "https://jobs.graincorp.com.au/job/Numurkah-Plant-Operator-Casual-Numurkah-Vict/1367794866/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Table 4 Plant & Animal Cultivation in Regional Australia)"
+  },
+  "slug": "graincorp-numurkah-operator",
+  "applicationId": "app_graincorp_numurkah_operator_1367794866",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_graincorp_numurkah_operator_1367794866",
+  "createdAt": "2026-11-01T21:32:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3636"
+  },
+  "files": {
+    "cvHtml": "applications/app_graincorp_numurkah_operator_1367794866/cv-graincorp-numurkah-operator.html",
+    "cvPdf": "applications/app_graincorp_numurkah_operator_1367794866/cv-graincorp-numurkah-operator.pdf",
+    "coverLetterHtml": "applications/app_graincorp_numurkah_operator_1367794866/cover-letter-graincorp-numurkah-operator.html",
+    "coverLetterPdf": "applications/app_graincorp_numurkah_operator_1367794866/cover-letter-graincorp-numurkah-operator.pdf",
+    "checklist": "applications/app_graincorp_numurkah_operator_1367794866/checklist.md"
+  }
+}

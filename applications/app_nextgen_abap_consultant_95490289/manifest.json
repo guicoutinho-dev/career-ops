@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP ABAP Consultant",
+    "company": "Next Gen Recruitment",
+    "location": "Melbourne VIC, Australia",
+    "url": "https://www.seek.com.au/job/95490289",
+    "seek_id": "95490289"
+  },
+  "slug": "nextgen-sap-abap-consultant",
+  "applicationId": "app_nextgen_abap_consultant_95490289",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_nextgen_abap_consultant_95490289",
+  "createdAt": "2026-11-03T17:59:10.987Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_nextgen_abap_consultant_95490289/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_nextgen_abap_consultant_95490289/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_nextgen_abap_consultant_95490289/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_nextgen_abap_consultant_95490289/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_nextgen_abap_consultant_95490289/checklist.md",
+    "jobDescription": "applications/app_nextgen_abap_consultant_95490289/job_description.md"
+  }
+}

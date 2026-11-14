@@ -1,0 +1,35 @@
+{
+  "job": {
+    "title": "Farm Hand",
+    "company": "Uralla Pastoral Nathalia Pty Ltd",
+    "location": "Nathalia VIC 3638",
+    "postcode": "3638",
+    "req_id": "seek_a6f32bc4662a",
+    "url": "https://www.seek.com.au/job/95263822",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible — Regional Victoria Table 4 Plant & Animal Cultivation)"
+  },
+  "slug": "uralla-pastoral-farmhand-nathalia",
+  "applicationId": "app_seek_a6f32bc4662a",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_uralla_pastoral_nathalia_95263822",
+  "createdAt": "2026-11-02T23:47:00.000Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": false,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "carLicenceOnly": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "3638"
+  },
+  "files": {
+    "cvHtml": "applications/app_uralla_pastoral_nathalia_95263822/cv-gilherme-pastoral-farmhand.html",
+    "cvPdf": "applications/app_uralla_pastoral_nathalia_95263822/cv-gilherme-pastoral-farmhand.pdf",
+    "coverLetterHtml": "applications/app_uralla_pastoral_nathalia_95263822/cover-letter-uralla-pastoral.html",
+    "coverLetterPdf": "applications/app_uralla_pastoral_nathalia_95263822/cover-letter-uralla-pastoral.pdf",
+    "jobDescription": "applications/app_uralla_pastoral_nathalia_95263822/job_description.md"
+  }
+}

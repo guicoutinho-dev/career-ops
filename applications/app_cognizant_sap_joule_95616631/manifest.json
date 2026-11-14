@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "Service Line Specialist - SAP Joule.AI",
+    "company": "Cognizant",
+    "location": "Sydney NSW, Australia",
+    "url": "https://www.seek.com.au/job/95616631",
+    "seek_id": "95616631"
+  },
+  "slug": "cognizant-service-line-specialist-sap-joule",
+  "applicationId": "app_cognizant_sap_joule_95616631",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_cognizant_sap_joule_95616631",
+  "createdAt": "2026-11-03T17:59:15.289Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_cognizant_sap_joule_95616631/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_cognizant_sap_joule_95616631/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_cognizant_sap_joule_95616631/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_cognizant_sap_joule_95616631/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_cognizant_sap_joule_95616631/checklist.md",
+    "jobDescription": "applications/app_cognizant_sap_joule_95616631/job_description.md"
+  }
+}

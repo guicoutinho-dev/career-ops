@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "Finance Technical Lead – SAP BW HANA",
+    "company": "Rio Tinto",
+    "location": "Perth WA, Australia",
+    "url": "https://www.seek.com.au/job/95438885",
+    "seek_id": "95438885"
+  },
+  "slug": "rio-tinto-finance-technical-lead-sap-bw-hana",
+  "applicationId": "app_riotinto_bw_hana_lead_95438885",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_riotinto_bw_hana_lead_95438885",
+  "createdAt": "2026-11-03T18:10:43.066Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_riotinto_bw_hana_lead_95438885/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_riotinto_bw_hana_lead_95438885/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_riotinto_bw_hana_lead_95438885/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_riotinto_bw_hana_lead_95438885/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_riotinto_bw_hana_lead_95438885/checklist.md",
+    "jobDescription": "applications/app_riotinto_bw_hana_lead_95438885/job_description.md"
+  }
+}

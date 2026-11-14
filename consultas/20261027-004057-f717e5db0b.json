@@ -1,0 +1,30 @@
+{
+  "id": "20261027-004057-f717e5db0b",
+  "questionHash": "f717e5790303",
+  "questionChars": 155,
+  "portal": "ChatGPT_Consultor",
+  "approvedVia": "flag --approve",
+  "createdAt": "2026-10-27T00:40:57.912Z",
+  "state": "ok",
+  "sent": true,
+  "strategy": "c",
+  "history": [
+    {
+      "s": "approved",
+      "t": "2026-10-27T00:40:57.912Z"
+    },
+    {
+      "s": "submitting",
+      "t": "2026-10-27T00:40:59.642Z"
+    },
+    {
+      "s": "ok",
+      "t": "2026-10-27T00:41:10.840Z"
+    }
+  ],
+  "blocks": 1,
+  "sawStopButton": true,
+  "finishedAt": "2026-10-27T00:41:10.840Z",
+  "exitCode": 0,
+  "responseChars": 3931
+}

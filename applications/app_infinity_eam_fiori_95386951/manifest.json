@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP EAM Functional & Fiori Consultant",
+    "company": "Infinity Pro",
+    "location": "North Sydney NSW, Australia",
+    "url": "https://www.seek.com.au/job/95386951",
+    "seek_id": "95386951"
+  },
+  "slug": "infinity-pro-sap-eam-fiori-consultant",
+  "applicationId": "app_infinity_eam_fiori_95386951",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_infinity_eam_fiori_95386951",
+  "createdAt": "2026-11-03T18:10:38.726Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_infinity_eam_fiori_95386951/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_infinity_eam_fiori_95386951/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_infinity_eam_fiori_95386951/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_infinity_eam_fiori_95386951/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_infinity_eam_fiori_95386951/checklist.md",
+    "jobDescription": "applications/app_infinity_eam_fiori_95386951/job_description.md"
+  }
+}

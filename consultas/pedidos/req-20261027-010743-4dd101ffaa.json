@@ -1,0 +1,27 @@
+{
+  "id": "req-20261027-010743-4dd101ffaa",
+  "requester": "Farol",
+  "need": "Teste de integracao do fluxo do coordenador com pergunta ficticia e nao sensivel.",
+  "tried": "Testes simulados com CLI falso ja passaram; falta o ciclo real.",
+  "question": "Pergunta ficticia de teste de interrupcao: escreva um texto longo, de cerca de 1200 palavras, sobre normalizacao de bancos de dados relacionais, com varias secoes.",
+  "questionHash": "4dd101b33394",
+  "questionSha256": "4dd101b333943604f6d8f122f587ed5847abc30d730c98a228ec5a61e63ef1b6",
+  "questionFile": "consultas\\pedidos\\req-20261027-010743-4dd101ffaa.pergunta.md",
+  "status": "consult-failed",
+  "createdAt": "2026-10-27T01:07:43.920Z",
+  "priorSameQuestion": [],
+  "approval": {
+    "phrase": "APROVO 4dd101b33394",
+    "at": "2026-10-27T01:13:54.897Z",
+    "note": "frase digitada pelo humano e repassada pelo coordenador"
+  },
+  "startedAt": "2026-10-27T01:13:54.897Z",
+  "updatedAt": "2026-10-27T01:14:15.238Z",
+  "consultId": "20261027-011354-4dd101110c",
+  "consultFile": "consultas\\20261027-011354-4dd101110c.md",
+  "consultState": "failed-portal-error",
+  "failure": {
+    "exitCode": 4,
+    "state": "failed-portal-error"
+  }
+}

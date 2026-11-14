@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP ABAP Developer",
+    "company": "Talent Street",
+    "location": "Brisbane QLD, Australia",
+    "url": "https://www.seek.com.au/job/95511111",
+    "seek_id": "95511111"
+  },
+  "slug": "talent-street-sap-abap-developer",
+  "applicationId": "app_talent_street_abap_95511111",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_talent_street_abap_95511111",
+  "createdAt": "2026-11-03T17:59:09.553Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_talent_street_abap_95511111/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_talent_street_abap_95511111/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_talent_street_abap_95511111/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_talent_street_abap_95511111/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_talent_street_abap_95511111/checklist.md",
+    "jobDescription": "applications/app_talent_street_abap_95511111/job_description.md"
+  }
+}

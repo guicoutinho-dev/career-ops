@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guilherme Coutinho Xavier — Hospitality &amp; Guest Relations Resume</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-variant-ligatures: none;
+    font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+  }
+
+  html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    font-family: 'Liberation Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8.4pt;
+    line-height: 1.42;
+    color: #1a1a1a;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* === HEADER === */
+  .header {
+    margin-bottom: 4px;
+  }
+
+  .header h1 {
+    font-size: 26pt;
+    font-weight: 700;
+    color: #111111;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 5px;
+  }
+
+  .contact-row {
+    font-size: 8.4pt;
+    line-height: 1.4;
+    color: #333333;
+    margin-bottom: 3px;
+  }
+
+  .contact-location {
+    font-size: 8.4pt;
+    color: #111111;
+    margin-bottom: 2px;
+  }
+
+  .contact-links {
+    font-size: 8.4pt;
+    color: #333333;
+  }
+
+  .contact-links a {
+    color: #111111;
+    text-decoration: underline;
+  }
+
+  .contact-links .separator {
+    color: #777777;
+    margin: 0 4px;
+  }
+
+  /* === DIVIDER === */
+  .divider {
+    border-bottom: 0.75pt solid #222222;
+    margin: 7px 0;
+  }
+
+  /* === SUBTITLE & SUMMARY === */
+  .cv-subtitle {
+    font-size: 9pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #111111;
+    margin-bottom: 4px;
+  }
+
+  .summary-text {
+    font-size: 8.4pt;
+    line-height: 1.42;
+    color: #222222;
+    text-align: justify;
+  }
+
+  /* === SECTIONS === */
+  .section {
+    margin-bottom: 4px;
+  }
+
+  .section-title {
+    font-size: 9pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #111111;
+    margin-bottom: 4px;
+  }
+
+  /* === SKILLS GRID === */
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .skill-item {
+    font-size: 8.4pt;
+    line-height: 1.42;
+  }
+
+  .skill-category {
+    font-weight: 700;
+    color: #111111;
+  }
+
+  /* === EXPERIENCE === */
+  .job {
+    margin-bottom: 6px;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 8.4pt;
+    margin-bottom: 1px;
+  }
+
+  .job-company {
+    font-weight: 700;
+    color: #111111;
+  }
+
+  .job-period {
+    font-size: 8.4pt;
+    color: #444444;
+  }
+
+  .job-role {
+    font-weight: 700;
+    font-style: italic;
+    color: #222222;
+    font-size: 8.4pt;
+    margin-bottom: 2px;
+  }
+
+  .bullets {
+    list-style-type: disc;
+    padding-left: 14px;
+  }
+
+  .bullets li {
+    font-size: 8.4pt;
+    line-height: 1.42;
+    color: #222222;
+    margin-bottom: 2px;
+    text-align: justify;
+  }
+
+  /* === FOOTER COLUMNS === */
+  .footer-columns {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-col-left {
+    flex: 2;
+  }
+
+  .footer-col-right {
+    flex: 1.5;
+  }
+
+  .edu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 8.4pt;
+    line-height: 1.42;
+    margin-bottom: 2px;
+  }
+
+  .edu-degree {
+    font-weight: 700;
+  }
+
+  .edu-year {
+    font-size: 8.4pt;
+    color: #555555;
+  }
+
+  .edu-org {
+    font-size: 8.4pt;
+    margin-bottom: 3px;
+  }
+
+  .lang-item {
+    font-size: 8.4pt;
+    line-height: 1.42;
+    margin-bottom: 2px;
+  }
+
+  /* === PRINT STYLES === */
+  @page {
+    size: A4 portrait;
+    margin: 8mm 9mm 8mm 9mm;
+  }
+
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .page {
+      max-width: none;
+      width: 100%;
+    }
+
+    .job, .skill-item, .footer-columns {
+      page-break-inside: avoid;
+    }
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Guilherme Coutinho Xavier</h1>
+    <div class="contact-row">
+      <div class="contact-location">Queensland, Australia · Full Australian Working Rights (WHV Subclass 462 — No Sponsorship Required)</div>
+      <div class="contact-links"><a href="tel:+557199998-5833">+55 71 99998-5833</a> <span class="separator">|</span> <a href="mailto:guicoutinho.dev@gmail.com">guicoutinho.dev@gmail.com</a> <span class="separator">|</span> <a href="https://www.linkedin.com/in/guicoutin/" target="_blank" rel="noopener">linkedin.com/in/guicoutin</a></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SUBTITLE & PROFESSIONAL SUMMARY -->
+  <div class="sr-only section-title">Professional Summary</div>
+  <div class="cv-subtitle">GUEST SERVICES &amp; HOSPITALITY PROFESSIONAL | CLIENT RELATIONS | BILINGUAL (EN/PT)</div>
+  <div class="summary-text">Customer-focused, energetic, and highly dependable professional with 5 years of client-facing consulting experience at leading multinational organizations (Accenture and Deloitte). Proven track record delivering five-star guest relations, coordinating logistics and reservations, resolving inquiries under pressure, and collaborating seamlessly within fast-paced teams. Brings exceptional communication skills, computer proficiency, meticulous attention to detail, and a vibrant, can-do attitude. Holds Full Australian Working Rights under the Working Holiday Visa (Subclass 462) with immediate availability for shift rosters, weekends, and regional tourism operations.</div>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Core Competencies &amp; Skills</div>
+    <div class="skills-grid">
+    <div class="skill-item"><span class="skill-category"><strong>Guest &amp; Customer Services:</strong></span> Five-Star Guest Relations | Front Office &amp; Reception | Reservation Management | VIP &amp; Executive Service | Conflict Resolution &amp; Problem Solving</div>
+    <div class="skill-item"><span class="skill-category"><strong>Operations &amp; Work Ethic:</strong></span> Team Collaboration | High Energy &amp; Physical Stamina | Fast-Paced Environment Adaptability | Punctuality &amp; Safety Compliance | Weekend &amp; Shift Flexibility</div>
+  </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- WORK EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Accenture</span>
+        <span class="job-period">Aug 2023 - Present</span>
+      </div>
+      <div class="job-role">Client Engagement &amp; Technology Consultant</div>
+      <ul class="bullets">
+        <li>Delivered high-touch client support and daily engagement for multinational consumer brands, ensuring prompt inquiry resolution and exceptional satisfaction.</li>
+        <li>Coordinated complex schedules and multi-stakeholder operational deliverables under tight deadlines with flawless punctuality and attention to detail.</li>
+        <li>Handled critical issue escalations with composure, empathy, and rapid problem-solving, earning a formal dedication and performance recognition award in year one.</li>
+        <li>Collaborated within multidisciplinary teams to ensure smooth daily operations and high operational service standards.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Deloitte</span>
+        <span class="job-period">Feb 2021 - Aug 2023</span>
+      </div>
+      <div class="job-role">Client Services &amp; Delivery Consultant</div>
+      <ul class="bullets">
+        <li>Served as primary customer-facing focal point during enterprise client projects, facilitating clear cross-functional communication and user support.</li>
+        <li>Demonstrated active multitasking and rapid adaptability in demanding, fast-paced work settings, ensuring high-quality and timely task completion.</li>
+        <li>Conducted detailed operational audits, user documentation, and administrative reporting across high-volume service delivery cycles.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">Independent &amp; Events Support</span>
+        <span class="job-period">Oct 2019 - Feb 2021</span>
+      </div>
+      <div class="job-role">Guest Services &amp; Operations Assistant</div>
+      <ul class="bullets">
+        <li>Provided hands-on event coordination, guest greeting, and on-site operational support for private clients and small business events.</li>
+        <li>Managed booking schedules, inquiries, and customer logistics while maintaining a warm, professional, and welcoming atmosphere.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION & LANGUAGES -->
+  <div class="section">
+    <div class="footer-columns">
+      <div class="footer-col-left">
+        <div class="section-title">Education &amp; Qualifications</div>
+        <div class="edu-item">
+          <span class="edu-degree">Bachelor of Science in Software Engineering</span>
+          <span class="edu-year">Graduated Dec 2023</span>
+        </div>
+        <div class="edu-org">Universidade Católica do Salvador (UCSAL)</div>
+        <div class="edu-item">
+          <span class="edu-degree">Work Rights &amp; Availability</span>
+          <span class="edu-year">Immediate</span>
+        </div>
+        <div class="edu-org">Full Australian Working Rights · Working Holiday Visa (Subclass 462)</div>
+      </div>
+      <div class="footer-col-right">
+        <div class="section-title">Languages &amp; Attributes</div>
+        <div class="lang-item"><strong>English:</strong> Professional Working Proficiency (Fluent)</div>
+        <div class="lang-item"><strong>Portuguese:</strong> Native</div>
+        <div class="lang-item"><strong>Personal Attributes:</strong> Positive, Reliable, Fast Learner, Highly Motivated</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

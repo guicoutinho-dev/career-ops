@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "Senior AI Developer (Generative & Agentic AI - SAP BTP)",
+    "company": "SAP Australia",
+    "location": "North Sydney NSW, Australia",
+    "url": "https://jobs.sap.com/job/North-Sydney-Senior-AI-Developer-%28Generative-&-Agentic-AI-%28SAP-BTP%29-NSW-2060/1367716933",
+    "seek_id": "1367716933"
+  },
+  "slug": "sap-australia-senior-ai-developer-btp",
+  "applicationId": "app_sap_au_ai_btp_dev_1367716933",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_sap_au_ai_btp_dev_1367716933",
+  "createdAt": "2026-11-03T18:10:35.812Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_sap_au_ai_btp_dev_1367716933/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_sap_au_ai_btp_dev_1367716933/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_sap_au_ai_btp_dev_1367716933/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_sap_au_ai_btp_dev_1367716933/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_sap_au_ai_btp_dev_1367716933/checklist.md",
+    "jobDescription": "applications/app_sap_au_ai_btp_dev_1367716933/job_description.md"
+  }
+}

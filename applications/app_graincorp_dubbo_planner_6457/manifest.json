@@ -1,0 +1,29 @@
+{
+  "job": {
+    "title": "Maintenance Planner - Dubbo",
+    "company": "GrainCorp",
+    "location": "Dubbo, NSW 2830",
+    "postcode": "2830",
+    "req_id": "6457",
+    "url": "https://jobs.graincorp.com.au/job/Dubbo-Maintenance-Planner-Dubbo-New/6457/",
+    "visa_type": "WHV Subclass 462 Specified Work (88 Days Eligible \u2014 Regional NSW Maintenance Planning)"
+  },
+  "applicationId": "app_graincorp_dubbo_planner_6457",
+  "status": "APPLIED",
+  "submittedAt": "2026-11-01T23:02:22.129177",
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "zeroLicenceFabrication": true,
+    "totalCvBullets": 12,
+    "postcodeVerified": "2830"
+  },
+  "files": {
+    "cvPdf": "applications/app_graincorp_dubbo_planner_6457/cv-graincorp.pdf",
+    "coverLetterPdf": "applications/app_graincorp_dubbo_planner_6457/cover-letter-graincorp.pdf",
+    "submissionProof": "applications/app_graincorp_dubbo_planner_6457/submission_proof.png"
+  }
+}

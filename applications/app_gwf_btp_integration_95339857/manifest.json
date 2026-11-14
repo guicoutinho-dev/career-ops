@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "Senior SAP BTP Integration Developer",
+    "company": "George Weston Foods",
+    "location": "Sydney NSW, Australia",
+    "url": "https://www.seek.com.au/job/95339857",
+    "seek_id": "95339857"
+  },
+  "slug": "gwf-senior-sap-btp-integration-developer",
+  "applicationId": "app_gwf_btp_integration_95339857",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_gwf_btp_integration_95339857",
+  "createdAt": "2026-11-03T17:59:05.265Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_gwf_btp_integration_95339857/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_gwf_btp_integration_95339857/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_gwf_btp_integration_95339857/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_gwf_btp_integration_95339857/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_gwf_btp_integration_95339857/checklist.md",
+    "jobDescription": "applications/app_gwf_btp_integration_95339857/job_description.md"
+  }
+}

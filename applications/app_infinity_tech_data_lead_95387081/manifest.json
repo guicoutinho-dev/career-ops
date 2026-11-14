@@ -1,0 +1,32 @@
+{
+  "job": {
+    "title": "SAP Technical Data Lead (S/4HANA, EAM, ALM)",
+    "company": "Infinity Pro",
+    "location": "Milsons Point, Sydney NSW, Australia",
+    "url": "https://www.seek.com.au/job/95387081",
+    "seek_id": "95387081"
+  },
+  "slug": "infinity-pro-sap-technical-data-lead",
+  "applicationId": "app_infinity_tech_data_lead_95387081",
+  "packageDir": "D:\\AntigravityProjetos\\career-ops\\applications\\app_infinity_tech_data_lead_95387081",
+  "createdAt": "2026-11-03T18:10:40.142Z",
+  "status": "ready_for_review",
+  "humanApprovalRequired": true,
+  "verification": {
+    "factCheckPassed": true,
+    "cvPdfPages": 1,
+    "coverLetterPdfPages": 1,
+    "template": "templates/cv-template.guilherme.html",
+    "zeroBrazilMention": true,
+    "totalCvBullets": 12,
+    "totalCertifications": 3
+  },
+  "files": {
+    "cvHtml": "applications/app_infinity_tech_data_lead_95387081/cv-guilherme-coutinho.html",
+    "cvPdf": "applications/app_infinity_tech_data_lead_95387081/cv-guilherme-coutinho.pdf",
+    "coverLetterHtml": "applications/app_infinity_tech_data_lead_95387081/cover-letter-guilherme-coutinho.html",
+    "coverLetterPdf": "applications/app_infinity_tech_data_lead_95387081/cover-letter-guilherme-coutinho.pdf",
+    "checklist": "applications/app_infinity_tech_data_lead_95387081/checklist.md",
+    "jobDescription": "applications/app_infinity_tech_data_lead_95387081/job_description.md"
+  }
+}
