@@ -4,6 +4,7 @@ from pathlib import Path
 
 import yaml
 from pydantic import BaseModel, Field, field_validator
+from typing import Literal
 
 
 class ScrapeSettings(BaseModel):
@@ -35,12 +36,19 @@ class PathSettings(BaseModel):
     web: str = "web"
 
 
+class EmployerDiscoverySettings(BaseModel):
+    enabled: bool = False
+    provider: Literal['osm_overpass'] = 'osm_overpass'
+    max_requests: int = Field(80, ge=1, le=80)
+
+
 class Settings(BaseModel):
     schedule: list[str]
     scrape: ScrapeSettings
     ai: AiSettings = AiSettings()
     server: ServerSettings = ServerSettings()
     paths: PathSettings = PathSettings()
+    employer_discovery: EmployerDiscoverySettings = EmployerDiscoverySettings()
     seed_groups: list[str] = []
     root: Path = Path(".")
 

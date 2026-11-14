@@ -6455,6 +6455,7 @@ body.ws-jobs #appSidebar, body.ws-jobs #mobileSidebarBtn { display: none !import
 
         <div class="jobs-ins-footer">
           <span>Fonte: <a href="${esc(safeUrl(j.url) || '#')}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);">${esc(j.source || 'Original')}</a></span>
+          ${j.source === 'OpenStreetMap discovery' ? '<span>Descoberta: <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors · ODbL</a></span>' : ''}
           <span>${j.posted_date ? `Publicado em ${esc(j.posted_date)}` : 'Data de publicação desconhecida'}</span>
         </div>
       `;

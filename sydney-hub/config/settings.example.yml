@@ -14,3 +14,7 @@ paths:
   db: "data/hub.db"
   web: "web"
 seed_groups: []
+employer_discovery:
+  enabled: false
+  provider: osm_overpass
+  max_requests: 80

@@ -11,6 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from hub.api.app import AppDeps, create_app
 from hub.storage.db import Database
 from hub.storage.catalog import CatalogRepository
+from hub.discovery.models import EmployerCandidate, SiteInspection, WebsiteFinding
 from hub.storage.groups import GroupRepository
 from hub.storage.posts import PostRepository
 from hub.storage.runs import RunRepository
@@ -31,6 +32,14 @@ if __name__ == "__main__":
              'url': 'https://example.com/hotel', 'suburb': 'Mascot', 'location': 'Mascot, NSW', 'state': 'NSW'},
         ]), encoding='utf-8')
         catalog.import_legacy_seed(seed)
+        catalog.upsert_site_inspection(
+            EmployerCandidate('https://cafe.example/', 'OpenStreetMap discovery', 'Rockdale', 'cafe'),
+            SiteInspection('ok', [
+                WebsiteFinding('employer_lead', 'https://cafe.example/', 'Cafe Website', None, None, 1763078400),
+                WebsiteFinding('verified_job', 'https://cafe.example/careers/barista', 'Cafe Website',
+                               'Barista', 'Barista — apply online', 1763078400),
+            ], 2),
+        )
         catalog.sync_posts()
         web_dir = Path(__file__).resolve().parents[1] / 'web'
         build_dashboard(web_dir)

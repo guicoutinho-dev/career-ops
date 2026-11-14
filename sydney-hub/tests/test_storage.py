@@ -259,3 +259,42 @@ def test_version_one_upgrade_has_its_own_backup_and_rollback(tmp_path):
         assert conn.execute('PRAGMA user_version').fetchone()[0] == 1
         assert 'source_group_name' not in {row[1] for row in conn.execute('PRAGMA table_info(opportunities)')}
         assert conn.execute("SELECT id FROM opportunities").fetchone()[0] == 'job-1'
+
+
+def test_pilot_snapshot_restores_and_guards_new_writes(tmp_path):
+    from hub.storage.db import snapshot_catalog_for_pilot, restore_catalog_backup
+
+    path = tmp_path / 'hub.db'
+    db = Database(path)
+    with db.connect() as conn:
+        conn.execute("INSERT INTO employers(id,name) VALUES ('before','Before')")
+    backup = snapshot_catalog_for_pilot(path)
+    assert backup.is_file()
+    with db.connect() as conn:
+        conn.execute("INSERT INTO employers(id,name) VALUES ('after','After')")
+    with pytest.raises(ValueError, match='changed since migration'):
+        restore_catalog_backup(path, target_version=2)
+    safety = restore_catalog_backup(path, target_version=2, force=True)
+    assert safety is not None and safety.is_file()
+    with db.connect() as conn:
+        assert [row['id'] for row in conn.execute('SELECT id FROM employers')] == ['before']
+        assert conn.execute('PRAGMA integrity_check').fetchone()[0] == 'ok'
+
+
+def test_pilot_rollback_cli_restores_selected_database(tmp_path):
+    import subprocess
+    import sys
+    from pathlib import Path
+    from hub.storage.db import snapshot_catalog_for_pilot
+
+    path = tmp_path / 'hub.db'
+    db = Database(path)
+    snapshot_catalog_for_pilot(path)
+    with db.connect() as conn:
+        conn.execute("INSERT INTO employers(id,name) VALUES ('new','New')")
+    script = Path(__file__).resolve().parents[1] / 'rollback_catalog.py'
+    result = subprocess.run([sys.executable, str(script), '--target-version', '2', '--database', str(path), '--force'],
+                            capture_output=True, text=True)
+    assert result.returncode == 0, result.stderr
+    with db.connect() as conn:
+        assert conn.execute('SELECT COUNT(*) FROM employers').fetchone()[0] == 0

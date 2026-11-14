@@ -16,6 +16,8 @@ The final engine discovers recent, relevant work for backpackers through indepen
 
 Each delivery must produce independently testable software. Later delivery plans should use findings from the earlier pilot rather than assume coverage or source access.
 
+For the local Employer Discovery Pilot, use OpenStreetMap/Overpass as the authorized discovery pointer under the bounded and attributed terms recorded in `docs/superpowers/reviews/2026-11-13-employer-source-rights.md`. This replaces the conditional Google Places adapter in Task 3 of the plan; Google Maps remains unapproved for persistent lead collection.
+
 ## Trust and operation contracts
 
 - `verified_job` requires a specific `job_listing` evidence row with `supports_job=1` and a checked timestamp. Generic careers pages are leads. Failed requests cannot upgrade or expire a record.

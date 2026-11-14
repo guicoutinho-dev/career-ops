@@ -117,9 +117,10 @@ def _digest(path: Path) -> str:
 
 
 def _rollback_manifest(path: Path, target_version: int = 0) -> Path:
-    if target_version not in (0, 1):
-        raise ValueError('Rollback target must be schema version 0 or 1')
-    suffix = '.catalog-rollback.json' if target_version == 0 else '.catalog-v2-rollback.json'
+    if target_version not in (0, 1, 2):
+        raise ValueError('Rollback target must be schema version 0, 1, or 2')
+    suffix = {0: '.catalog-rollback.json', 1: '.catalog-v2-rollback.json',
+              2: '.employer-pilot-rollback.json'}[target_version]
     return path.with_name(path.name + suffix)
 
 
@@ -131,6 +132,29 @@ def _backup(path: Path, label: str = 'pre-catalog') -> Path:
         if check.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
             backup.unlink(missing_ok=True)
             raise RuntimeError("Catalog backup failed integrity check")
+    return backup
+
+
+def snapshot_catalog_for_pilot(path: Path) -> Path:
+    """Keep one verified pre-pilot snapshot until explicitly restored."""
+    path = Path(path)
+    if not path.is_file():
+        raise ValueError('Pilot database is missing')
+    manifest = _rollback_manifest(path, 2)
+    if manifest.exists():
+        info = json.loads(manifest.read_text(encoding='utf-8'))
+        existing = Path(info['backup'])
+        if existing.is_file() and _digest(existing) == info['before_sha256']:
+            return existing
+        raise ValueError('Existing pilot backup is missing or changed')
+    with closing(sqlite3.connect(path)) as conn:
+        if conn.execute('PRAGMA user_version').fetchone()[0] != 2:
+            raise ValueError('Pilot requires catalog schema version 2')
+    backup = _backup(path, 'pre-employer-pilot')
+    manifest.write_text(json.dumps({
+        'backup': str(backup.resolve()), 'before_sha256': _digest(backup),
+        'after_sha256': _digest(path),
+    }), encoding='utf-8')
     return backup
 
 
