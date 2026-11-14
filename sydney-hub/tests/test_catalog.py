@@ -3,6 +3,67 @@ from pathlib import Path
 
 from hub.storage.catalog import CatalogRepository
 from hub.storage.db import Database
+from hub.discovery.models import EmployerCandidate, SiteInspection, WebsiteFinding
+
+
+def _candidate():
+    return EmployerCandidate('https://cafe.example/', 'OpenStreetMap discovery', 'Rockdale', 'cafe', 'node/1')
+
+
+def _inspection(*findings):
+    return SiteInspection('ok', list(findings), 2)
+
+
+def _finding(state, url, title=None):
+    return WebsiteFinding(state, url, 'Cafe Aurora', title, 'Barista. Apply now.' if title else None, 123)
+
+
+def test_site_lead_and_listing_upsert(tmp_path):
+    catalog = CatalogRepository(Database(tmp_path / 'hub.db'))
+    new_ids, existing_ids = catalog.upsert_site_inspection(_candidate(), _inspection(
+        _finding('employer_lead', 'https://cafe.example/'),
+        _finding('verified_job', 'https://cafe.example/careers/barista', 'Barista'),
+    ))
+    assert len(new_ids) == 2 and existing_ids == []
+    by_state = {row['verification_state']: row for row in catalog.list()}
+    assert by_state['employer_lead']['title'] is None
+    job = by_state['verified_job']
+    assert job['title'] == 'Barista' and job['source_url'] == 'https://cafe.example/careers/barista'
+    assert job['company'] == 'Cafe Aurora' and job['visa_status'] == 'unknown'
+    assert job['pay_display'] is None and job['requirements'] is None and job['published_at'] is None
+    assert any(e['source_type'] == 'job_listing' and e['supports_job'] for e in job['evidence'])
+
+
+def test_hiring_mention_stays_unverified(tmp_path):
+    catalog = CatalogRepository(Database(tmp_path / 'hub.db'))
+    catalog.upsert_site_inspection(_candidate(), _inspection(
+        _finding('unverified_job_post', 'https://cafe.example/careers', 'Barista'),
+    ))
+    assert [row['verification_state'] for row in catalog.list()] == ['unverified_job_post']
+    assert catalog.list(verification_state='verified_job') == []
+
+
+def test_repeat_and_legacy_url_keep_id(tmp_path):
+    catalog = CatalogRepository(Database(tmp_path / 'hub.db'))
+    seed = tmp_path / 'jobs.json'
+    seed.write_text(json.dumps([{'id': 'legacy-42', 'title': 'Barista', 'company': 'Cafe Aurora',
+                                 'source': 'Legacy', 'url': 'https://cafe.example/careers/barista'}]))
+    catalog.import_legacy_seed(seed)
+    inspected = _inspection(_finding('verified_job', 'https://cafe.example/careers/barista', 'Barista'))
+    assert catalog.upsert_site_inspection(_candidate(), inspected) == ([], ['legacy-42'])
+    assert catalog.upsert_site_inspection(_candidate(), inspected) == ([], ['legacy-42'])
+    row = catalog.list()[0]
+    assert row['id'] == 'legacy-42' and row['verification_state'] == 'verified_job'
+    assert len([e for e in row['evidence'] if e['source_type'] == 'job_listing']) == 1
+
+
+def test_timeout_preserves_status(tmp_path):
+    catalog = CatalogRepository(Database(tmp_path / 'hub.db'))
+    inspected = _inspection(_finding('verified_job', 'https://cafe.example/careers/barista', 'Barista'))
+    catalog.upsert_site_inspection(_candidate(), inspected)
+    before = catalog.list()
+    assert catalog.upsert_site_inspection(_candidate(), SiteInspection('timeout', [], 1)) == ([], [])
+    assert catalog.list() == before
 
 
 def test_legacy_seed_preserves_id_but_drops_unverified_claims(tmp_path):

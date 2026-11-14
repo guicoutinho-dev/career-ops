@@ -8,6 +8,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+from hub.discovery.models import EmployerCandidate, SiteInspection
+
 from hub.storage.db import Database
 
 
@@ -18,9 +20,62 @@ def _http_url(value: object) -> str | None:
     return value.strip() if parsed.scheme in ('http', 'https') and parsed.netloc else None
 
 
+def _url_key(url: str) -> str:
+    parsed = urlparse(url)
+    return parsed._replace(scheme=parsed.scheme.lower(), netloc=parsed.netloc.lower(),
+                           path=parsed.path.rstrip('/') or '/', fragment='').geturl()
+
+
 class CatalogRepository:
     def __init__(self, db: Database) -> None:
         self._db = db
+
+    def upsert_site_inspection(self, candidate: EmployerCandidate, inspection: SiteInspection) -> tuple[list[str], list[str]]:
+        if inspection.outcome != 'ok' or not inspection.findings:
+            return [], []
+        new_ids: list[str] = []
+        existing_ids: list[str] = []
+        with self._db.connect() as conn:
+            known = {_url_key(row['source_url']): row['id'] for row in conn.execute(
+                'SELECT id,source_url FROM opportunities ORDER BY first_seen_at DESC'
+            )}
+            for finding in inspection.findings:
+                url = _http_url(finding.source_url)
+                name = (finding.employer_name or '').strip()
+                if not url or not name:
+                    continue
+                key = _url_key(url)
+                opportunity_id = known.get(key)
+                employer_id = hashlib.sha256(_url_key(candidate.website_url).encode()).hexdigest()[:20]
+                conn.execute('INSERT OR IGNORE INTO employers(id,name,website) VALUES (?,?,?)',
+                             (employer_id, name, candidate.website_url))
+                if opportunity_id is None:
+                    opportunity_id = 'site_' + hashlib.sha256(key.encode()).hexdigest()[:20]
+                    conn.execute(
+                        'INSERT INTO opportunities(id,employer_id,title,source,source_url,verification_state,first_seen_at,description) '
+                        'VALUES (?,?,?,?,?,?,?,?)',
+                        (opportunity_id, employer_id, finding.title if finding.verification_state != 'employer_lead' else None,
+                         candidate.discovery_source, url, finding.verification_state, finding.checked_at, finding.excerpt),
+                    )
+                    known[key] = opportunity_id
+                    new_ids.append(opportunity_id)
+                else:
+                    existing_ids.append(opportunity_id)
+                    conn.execute(
+                        'UPDATE opportunities SET employer_id=?,title=?,source=?,source_url=?,verification_state=?,description=? '
+                        "WHERE id=? AND verification_state!='verified_job'",
+                        (employer_id, finding.title if finding.verification_state != 'employer_lead' else None,
+                         candidate.discovery_source, url, finding.verification_state, finding.excerpt, opportunity_id),
+                    )
+                source_type = 'job_listing' if finding.verification_state == 'verified_job' else 'employer_website'
+                supports_job = int(finding.verification_state == 'verified_job')
+                conn.execute(
+                    'INSERT INTO opportunity_evidence(opportunity_id,source_url,source_type,observed_at,checked_at,excerpt,supports_job) '
+                    'VALUES (?,?,?,?,?,?,?) ON CONFLICT(opportunity_id,source_url,source_type) DO UPDATE SET '
+                    'checked_at=excluded.checked_at,excerpt=excluded.excerpt,supports_job=excluded.supports_job',
+                    (opportunity_id, url, source_type, finding.checked_at, finding.checked_at, finding.excerpt, supports_job),
+                )
+        return new_ids, existing_ids
 
     def import_legacy_seed(self, path: Path) -> int:
         if not path.is_file():

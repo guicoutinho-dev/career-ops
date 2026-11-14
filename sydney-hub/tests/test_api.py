@@ -16,6 +16,7 @@ from hub.storage.catalog import CatalogRepository
 from hub.storage.groups import GroupRepository
 from hub.storage.posts import PostRepository
 from hub.storage.runs import RunRepository
+from hub.discovery.models import EmployerCandidate, SiteInspection, WebsiteFinding
 from datetime import datetime
 
 GROUP = "https://www.facebook.com/groups/alpha/"
@@ -112,6 +113,18 @@ def test_opportunities_api_preserves_facebook_group_provenance(ctx):
     assert item['source_group_name'] == 'Alpha'
     assert item['source_group_url'] == GROUP
     assert item['source_url'].endswith('/posts/community-1/')
+
+
+def test_verified_api_requires_checked_listing(ctx):
+    candidate = EmployerCandidate('https://cafe.example/', 'OpenStreetMap discovery', 'Rockdale', 'cafe')
+    finding = WebsiteFinding('verified_job', 'https://cafe.example/careers/barista', 'Cafe Aurora',
+                             'Barista', 'Barista. Apply now.', 123)
+    ctx.deps.catalog.upsert_site_inspection(candidate, SiteInspection('ok', [finding], 1))
+    rows = ctx.client.get('/api/opportunities?verification_state=verified_job').json()
+    assert len(rows) == 1
+    assert rows[0]['source_url'] == 'https://cafe.example/careers/barista'
+    assert rows[0]['last_verified_at'] == '1970-01-01T00:02:03+00:00'
+    assert rows[0]['evidence'][0]['checked_at'] == 123
 
 
 # --- groups ------------------------------------------------------------------------------
