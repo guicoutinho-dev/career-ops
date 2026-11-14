@@ -1,0 +1,446 @@
+from __future__ import annotations
+
+from dataclasses import replace
+from pathlib import Path
+
+import pytest
+from fastapi.testclient import TestClient
+
+from hub.api.app import AppDeps, create_app
+from hub.domain.models import (
+    AiResult, Classification, Post, Run, RunStatus, ScrapedPost, Trigger,
+)
+from hub.pipeline.routine import RunAlreadyActive
+from hub.storage.db import Database
+from hub.storage.catalog import CatalogRepository
+from hub.storage.groups import GroupRepository
+from hub.storage.posts import PostRepository
+from hub.storage.runs import RunRepository
+from hub.discovery.models import EmployerCandidate, SiteInspection, WebsiteFinding
+from datetime import datetime, timedelta, timezone
+
+GROUP = "https://www.facebook.com/groups/alpha/"
+HOST = "127.0.0.1:8765"
+
+
+class FakeRunner:
+    def __init__(self):
+        self.running = False
+        self.calls = []
+
+    @property
+    def is_running(self):
+        return self.running
+
+    def run(self, trigger):
+        if self.running:
+            raise RunAlreadyActive()
+        self.calls.append(trigger)
+        return Run(trigger=trigger, started_at=1.0)
+
+
+class FakeScheduler:
+    def next_run_at(self):
+        return datetime(2026, 12, 1, 14, 0)
+
+
+@pytest.fixture
+def ctx(tmp_path):
+    db = Database(tmp_path / "hub.db")
+    web = tmp_path / "web"
+    web.mkdir()
+    (web / "index.html").write_text("<html>dashboard</html>", encoding="utf-8")
+    deps = AppDeps(
+        groups=GroupRepository(db), posts=PostRepository(db), runs=RunRepository(db),
+        catalog=CatalogRepository(db),
+        runner=FakeRunner(), scheduler=FakeScheduler(), web_dir=web,
+        allowed_hosts={"127.0.0.1:8765", "localhost:8765"}, spawn=lambda fn: fn(),
+    )
+    client = TestClient(create_app(deps), base_url=f"http://{HOST}")
+    return type("Ctx", (), dict(client=client, deps=deps))
+
+
+def add_post(ctx, pid, kind="stay", score=70, ts=1000.0, ai=None):
+    sp = ScrapedPost(post_id=pid, group_url=GROUP, permalink=f"{GROUP}posts/{pid}/", body="Room Rosebery $300 pw",
+                     created_ts=ts, author="Ana", group_name="Alpha", photos=["http://i/1.jpg"])
+    post = Post(scraped=sp, classification=Classification(kind=kind, price_week=300, suburb="Rosebery", score=score),
+                first_seen_at=ts)
+    ctx.deps.posts.add(post)
+    if ai:
+        ctx.deps.posts.save_ai(pid, ai)
+
+
+def test_built_dashboard_and_assets_serve_with_api(ctx, tmp_path):
+    import shutil
+    from web.build_dashboard import build
+
+    source = Path(__file__).resolve().parents[1] / 'web'
+    web = tmp_path / 'built-web'
+    (web / 'seed').mkdir(parents=True)
+    for name in ('template.html', 'atlas.css', 'zeus-engraving.webp'):
+        shutil.copy2(source / name, web / name)
+    shutil.copy2(source / 'seed' / 'suburb_centroids.json', web / 'seed' / 'suburb_centroids.json')
+    build(web)
+    client = TestClient(create_app(replace(ctx.deps, web_dir=web)), base_url=f"http://{HOST}")
+    assert "Visualização de moradias" in client.get("/").text
+    assert "zeus-engraving.webp" in client.get("/atlas.css").text
+    image = client.get("/zeus-engraving.webp")
+    assert image.status_code == 200 and image.headers["content-type"] == "image/webp"
+    assert client.get("/api/status").status_code == 200
+    assert client.get("/api/posts?kind=stay").json() == []
+
+
+def test_opportunities_api_filters_persisted_catalog_without_assumptions(ctx, tmp_path):
+    seed = tmp_path / 'jobs.json'
+    seed.write_text('[{"id":"one","title":"Barista","company":"Cafe","source":"Seek","url":"https://seek.example/job/1","suburb":"Rockdale","pay_display":"$40/h"},{"id":"two","title":"Cleaner","company":"Hotel","source":"Direct Employer","url":"https://hotel.example","suburb":"Mascot"}]')
+    ctx.deps.catalog.import_legacy_seed(seed)
+    response = ctx.client.get('/api/opportunities?role=Barista&suburb=Rockdale')
+    assert response.status_code == 200
+    assert [x['id'] for x in response.json()] == ['one']
+    assert response.json()[0]['pay_display'] is None
+    assert ctx.client.get('/api/opportunities?verification_state=employer_lead').json()[0]['id'] == 'two'
+    assert ctx.client.get('/api/opportunities?limit=0').status_code == 422
+    assert ctx.client.get('/api/opportunities?verification_state=fake').status_code == 422
+    assert ctx.client.get('/api/opportunities?max_commute_minutes=30').status_code == 422
+    assert ctx.client.get('/api/opportunities?origin_suburb=Kogarah&max_commute_minutes=30').json() == []
+
+
+def test_published_api_role_recent_and_time_specific_commute_filters(ctx, tmp_path):
+    from datetime import timezone, timedelta
+    from zoneinfo import ZoneInfo
+
+    from hub.discovery.published import PublishedListing, ListingCheck, SourcePolicy
+    from hub.discovery.transit import CommuteResult
+    from hub.storage.db import migrate_published_catalog
+
+    migrate_published_catalog(tmp_path / 'hub.db')
+    now = datetime.now(timezone.utc)
+    item = PublishedListing('workable', 'A1', 'https://apply.workable.com/cafe/j/A1/',
+                            'Barista', 'Cafe', 'Rockdale NSW', now - timedelta(days=1),
+                            None, None, -33.923, 151.187)
+    check = ListingCheck('ok', now.timestamp(), item.source_url, 'Barista application')
+    opportunity_id = ctx.deps.catalog.upsert_published_listing(item, check, SourcePolicy('workable', True, 'Workable'),
+                                                                 role_bucket='barista')
+    response = ctx.client.get('/api/opportunities?role_bucket=barista&recent=true&limit=1')
+    assert response.status_code == 200
+    assert response.headers['X-Total-Count'] == '1'
+    assert response.json()[0]['id'] == opportunity_id
+    assert response.json()[0]['recent'] is True
+    assert response.json()[0]['commute_unknown'] is True
+    assert ctx.client.get('/api/opportunities?role_bucket=warehouse&recent=true').json() == []
+    legacy = tmp_path / 'legacy.json'
+    legacy.write_text('[{"id":"undated","title":"Cleaner","company":"Hotel","source":"Seek","url":"https://example.com/undated"}]')
+    ctx.deps.catalog.import_legacy_seed(legacy)
+    no_date = PublishedListing('workable', 'A2', 'https://apply.workable.com/cafe/j/A2/',
+                               'Waitstaff', 'Cafe', 'Rockdale NSW', None, None, None, None, None)
+    unknown_date_id = ctx.deps.catalog.upsert_published_listing(
+        no_date, ListingCheck('ok', now.timestamp(), no_date.source_url, 'Waitstaff application'),
+        SourcePolicy('workable', True, 'Workable'), role_bucket='front_of_house')
+    assert {item['id'] for item in ctx.client.get('/api/opportunities?recent=false').json()} == {'undated', unknown_date_id}
+    assert ctx.client.get('/api/opportunities?origin_suburb=Rockdale Station&commute_window=tuesday_0900&commute_unknown=false').json() == []
+    assert ctx.client.get('/api/opportunities?origin_suburb=Rockdale Station&commute_window=tuesday_0900&max_commute_minutes=45').json() == []
+
+    departure = datetime(2026, 11, 17, 9, 0, tzinfo=ZoneInfo('Australia/Sydney'))
+    ctx.deps.catalog.record_commute_observation(opportunity_id, 'Rockdale Station', 'tuesday_0900', departure,
+        CommuteResult(40, 'https://api.transport.nsw.gov.au/v1/tp/trip', now.timestamp(), 'ok'))
+    response = ctx.client.get('/api/opportunities?origin_suburb=Rockdale Station&commute_window=tuesday_0900&max_commute_minutes=45')
+    assert response.headers['X-Total-Count'] == '1'
+    assert response.json()[0]['commute_windows']['tuesday_0900'] == 40
+    assert response.json()[0]['commute_observations'][0]['source_url'] == 'https://api.transport.nsw.gov.au/v1/tp/trip'
+    assert response.json()[0]['commute_observations'][0]['checked_at'] == now.timestamp()
+    assert response.json()[0]['commute_unknown'] is False
+    assert ctx.client.get('/api/opportunities?origin_suburb=Rockdale Station&commute_window=friday_1800&max_commute_minutes=45').json() == []
+    moved = PublishedListing('workable', 'A1', item.source_url, item.title, item.company,
+                             'Mascot NSW', item.published_at, None, None, -33.93, 151.19)
+    assert ctx.deps.catalog.upsert_published_listing(moved, check, SourcePolicy('workable', True, 'Workable'),
+                                                       role_bucket='barista') == opportunity_id
+    assert ctx.client.get('/api/opportunities?origin_suburb=Rockdale Station&commute_window=tuesday_0900&max_commute_minutes=45').json() == []
+
+
+def test_opportunities_api_preserves_facebook_group_provenance(ctx):
+    add_post(ctx, 'community-1', kind='job')
+    ctx.deps.catalog.sync_posts()
+    item = ctx.client.get('/api/opportunities').json()[0]
+    assert item['id'] == 'community-1'
+    assert item['source_group_name'] == 'Alpha'
+    assert item['source_group_url'] == GROUP
+    assert item['source_url'].endswith('/posts/community-1/')
+
+
+def test_verified_api_requires_checked_listing(ctx):
+    candidate = EmployerCandidate(
+        'https://cafe.example/', 'OpenStreetMap discovery', 'Rockdale', 'cafe', 'node/1',
+        business_name='Cafe Aurora', lat=-33.9542, lng=151.1403,
+    )
+    finding = WebsiteFinding('verified_job', 'https://cafe.example/careers/barista', 'Cafe Aurora',
+                             'Barista', 'Barista. Apply now.', 123)
+    ctx.deps.catalog.upsert_site_inspection(candidate, SiteInspection('ok', [finding], 1))
+    rows = ctx.client.get('/api/opportunities?verification_state=verified_job').json()
+    assert len(rows) == 1
+    assert rows[0]['source_url'] == 'https://cafe.example/careers/barista'
+    assert rows[0]['last_verified_at'] == '1970-01-01T00:02:03+00:00'
+    assert rows[0]['evidence'][0]['checked_at'] == 123
+    assert rows[0]['suburb'] == 'Rockdale'
+    assert rows[0]['category'] == 'cafe'
+    assert rows[0]['lat'] == -33.9542 and rows[0]['lng'] == 151.1403
+
+
+def test_opportunities_api_pagination_x_total_count_and_provenance(ctx, tmp_path):
+    seed = tmp_path / 'jobs.json'
+    seed.write_text(
+        '[{"id":"lead-a","title":"Cleaner","company":"Hotel Alpha","source":"Direct Employer","url":"https://hotel-alpha.example","suburb":"Mascot"}]',
+        encoding='utf-8',
+    )
+    ctx.deps.catalog.import_legacy_seed(seed)
+
+    cand_b = EmployerCandidate(
+        'https://pub-bravo.example/', 'OpenStreetMap discovery', 'Rockdale', 'pub', 'node/10',
+        business_name='Pub Bravo', lat=-33.952, lng=151.138,
+    )
+    finding_b = WebsiteFinding(
+        'verified_job', 'https://careers.bravo.example/job/1', 'Pub Bravo',
+        'Bartender', 'Bartender at Pub Bravo Rockdale.', 2000,
+        listing_source='PageUp', ats_provider='pageup',
+        role_bucket='hospitality_cleaning', suburb_match_basis='listing_location',
+        discovery_source='OpenStreetMap discovery',
+    )
+    ctx.deps.catalog.upsert_site_inspection(cand_b, SiteInspection('ok', [finding_b], 1))
+
+    cand_c = EmployerCandidate(
+        'https://cafe-charlie.example/', 'OpenStreetMap discovery', 'Kogarah', 'cafe', 'node/11',
+        business_name='Cafe Charlie', lat=-33.963, lng=151.132,
+    )
+    finding_c = WebsiteFinding(
+        'verified_job', 'https://cafe-charlie.example/careers/barista', 'Cafe Charlie',
+        'Barista', 'Barista in Kogarah.', 2000,
+    )
+    ctx.deps.catalog.upsert_site_inspection(cand_c, SiteInspection('ok', [finding_c], 1))
+
+    page0 = ctx.client.get('/api/opportunities?limit=1&offset=0')
+    page1 = ctx.client.get('/api/opportunities?limit=1&offset=1')
+    page2 = ctx.client.get('/api/opportunities?limit=1&offset=2')
+    assert page0.status_code == 200 and page1.status_code == 200 and page2.status_code == 200
+    assert page0.headers.get('x-total-count') == '3'
+    assert page1.headers.get('x-total-count') == '3'
+    all_ids = [r['id'] for r in ctx.client.get('/api/opportunities').json()]
+    paged_ids = [page0.json()[0]['id'], page1.json()[0]['id'], page2.json()[0]['id']]
+    assert paged_ids == all_ids
+
+    filtered = ctx.client.get('/api/opportunities?verification_state=verified_job&suburb=Rockdale&limit=1&offset=0')
+    assert filtered.status_code == 200
+    assert filtered.headers.get('x-total-count') == '1'
+    rows = filtered.json()
+    assert len(rows) == 1
+    assert rows[0]['source'] == 'PageUp'
+    assert rows[0]['discovery_source'] == 'OpenStreetMap discovery'
+    assert rows[0]['ats_provider'] == 'pageup'
+    assert rows[0]['role_bucket'] == 'hospitality_cleaning'
+    assert rows[0]['suburb_match_basis'] == 'listing_location'
+    assert ctx.client.get('/api/opportunities?offset=-1').status_code == 422
+
+
+def _seed_v5_rows(ctx):
+    now_iso = datetime.now(timezone.utc).isoformat()
+    old_iso = (datetime.now(timezone.utc) - timedelta(days=20)).isoformat()
+    with ctx.deps.catalog._db.connect() as conn:
+        conn.execute("INSERT OR IGNORE INTO employers(id, name) VALUES ('emp-1', 'Cafe One'), ('emp-2', 'Pub Two'), ('emp-3', 'Venue Three')")
+        conn.execute(
+            "INSERT INTO opportunities(id, employer_id, title, location, suburb, state, source, source_url, verification_state, first_seen_at, published_at, last_verified_at, employment_type, requirements, pay_display, pay_hourly_min, category, ats_provider, role_bucket) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            ('v5-a', 'emp-1', 'Barista', 'Rockdale, NSW', 'Rockdale', 'NSW', 'Workable', 'https://a.example/1', 'verified_job', 100.0, now_iso, now_iso, 'Casual', 'RSA; White Card', '$28/h', 28.0, 'Hospitality', 'workable', 'barista_hospitality'),
+        )
+        conn.execute(
+            "INSERT INTO opportunities(id, employer_id, title, location, suburb, state, source, source_url, verification_state, first_seen_at, published_at, last_verified_at, employment_type, requirements, pay_display, pay_hourly_min, category, ats_provider, role_bucket) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            ('v5-b', 'emp-2', 'Bartender', 'Mascot, NSW', 'Mascot', 'NSW', 'PageUp', 'https://b.example/2', 'verified_job', 90.0, old_iso, now_iso, 'Part-time', 'RCG', '$42/h', 42.0, 'Hospitality', 'pageup', 'barista_hospitality'),
+        )
+        conn.execute(
+            "INSERT INTO opportunities(id, employer_id, title, location, suburb, state, source, source_url, verification_state, first_seen_at, published_at, last_verified_at, employment_type, requirements, pay_display, pay_hourly_min, category, ats_provider, role_bucket) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            ('v5-c', 'emp-3', 'Kitchen Hand', 'Kogarah, NSW', 'Kogarah', 'NSW', 'Facebook Group', 'https://c.example/3', 'unverified_job_post', 80.0, None, None, None, None, None, None, 'Hospitality', None, 'kitchen_allrounder'),
+        )
+        conn.execute(
+            "INSERT INTO opportunities(id, employer_id, title, location, suburb, state, source, source_url, verification_state, first_seen_at, category) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            ('v5-d', 'emp-1', None, 'Rockdale, NSW', 'Rockdale', 'NSW', 'OpenStreetMap discovery', 'https://d.example/4', 'employer_lead', 70.0, 'cafe'),
+        )
+        conn.execute(
+            "INSERT INTO opportunity_evidence(opportunity_id, source_url, source_type, observed_at, checked_at, supports_job) VALUES "
+            "('v5-a', 'https://a.example/1', 'job_listing', 100.0, 100.0, 1), "
+            "('v5-b', 'https://b.example/2', 'job_listing', 90.0, 90.0, 1)"
+        )
+
+
+def test_opportunities_pay_filters_and_include_unknown_semantics(ctx):
+    _seed_v5_rows(ctx)
+    assert [r['id'] for r in ctx.client.get('/api/opportunities').json()] == ['v5-a', 'v5-b', 'v5-c', 'v5-d']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?pay_min=30').json()] == ['v5-b']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?pay_min=30&include_unknown_pay=true').json()] == ['v5-b', 'v5-c', 'v5-d']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?pay_min=25&pay_max=35').json()] == ['v5-a']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?pay_max=35&include_unknown_pay=true').json()] == ['v5-a', 'v5-c', 'v5-d']
+    assert ctx.client.get('/api/opportunities?pay_min=45&pay_max=30').status_code == 422
+
+
+def test_opportunities_employment_type_and_requirement_include_unknown(ctx):
+    _seed_v5_rows(ctx)
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?employment_type=Casual').json()] == ['v5-a']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?employment_type=Casual&include_unknown_employment_type=true').json()] == ['v5-a', 'v5-c', 'v5-d']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?requirement=RSA').json()] == ['v5-a']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?requirement=RSA&include_unknown_requirement=true').json()] == ['v5-a', 'v5-c', 'v5-d']
+
+
+def test_opportunities_category_ats_provider_recent_days_and_summary(ctx):
+    _seed_v5_rows(ctx)
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?ats_provider=workable').json()] == ['v5-a']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?category=cafe').json()] == ['v5-d']
+    assert [r['id'] for r in ctx.client.get('/api/opportunities?recent_days=7').json()] == ['v5-a']
+
+    summary = ctx.client.get('/api/opportunities/summary')
+    assert summary.status_code == 200
+    data = summary.json()
+    assert data['total'] == 4
+    assert data['counts_by_state'] == {'verified_job': 2, 'unverified_job_post': 1, 'employer_lead': 1}
+    assert data['facets']['suburbs'] == ['Kogarah', 'Mascot', 'Rockdale']
+    assert data['facets']['ats_providers'] == ['pageup', 'workable']
+    assert data['facets']['employment_types'] == ['Casual', 'Part-time']
+
+    filtered_summary = ctx.client.get('/api/opportunities/summary?suburb=Rockdale')
+    assert filtered_summary.status_code == 200
+    assert filtered_summary.json()['counts_by_state'] == {'verified_job': 1, 'unverified_job_post': 0, 'employer_lead': 1}
+    assert ctx.client.get('/api/opportunities/summary?pay_min=50&pay_max=20').status_code == 422
+
+
+# --- groups ------------------------------------------------------------------------------
+
+def test_add_and_list_groups(ctx):
+    r = ctx.client.post("/api/groups", json={"url": "facebook.com/groups/alpha?ref=x"})
+    assert r.status_code == 201 and r.json()["url"] == GROUP and r.json()["enabled"] is True
+    listing = ctx.client.get("/api/groups").json()
+    assert [g["url"] for g in listing] == [GROUP]
+
+
+def test_add_group_rejects_invalid_url_and_duplicates(ctx):
+    assert ctx.client.post("/api/groups", json={"url": "https://example.com/x"}).status_code == 422
+    assert ctx.client.post("/api/groups", json={"url": GROUP}).status_code == 201
+    assert ctx.client.post("/api/groups", json={"url": GROUP}).status_code == 409
+
+
+def test_toggle_and_delete_group(ctx):
+    gid = ctx.client.post("/api/groups", json={"url": GROUP}).json()["id"]
+    r = ctx.client.patch(f"/api/groups/{gid}", json={"enabled": False})
+    assert r.status_code == 200 and r.json()["enabled"] is False
+    assert ctx.client.delete(f"/api/groups/{gid}").status_code == 204
+    assert ctx.client.delete(f"/api/groups/{gid}").status_code == 404
+    assert ctx.client.patch(f"/api/groups/{gid}", json={"enabled": True}).status_code == 404
+
+
+# --- runs & status -----------------------------------------------------------------------
+
+def test_run_now_triggers_manual_run(ctx):
+    r = ctx.client.post("/api/runs")
+    assert r.status_code == 202
+    assert ctx.deps.runner.calls == [Trigger.MANUAL]
+
+
+def test_run_now_conflicts_when_already_running(ctx):
+    ctx.deps.runner.running = True
+    assert ctx.client.post("/api/runs").status_code == 409
+
+
+def test_status_idle_with_next_run_and_counters(ctx):
+    ctx.client.post("/api/groups", json={"url": GROUP})
+    add_post(ctx, "a")
+    s = ctx.client.get("/api/status").json()
+    assert s["state"] == "idle" and s["next_run_at"].startswith("2026-12-01T14:00")
+    assert s["new_posts"] == 1 and s["ai_pending"] == 1
+    assert s["groups_total"] == 1 and s["groups_enabled"] == 1 and s["last_run"] is None
+
+
+def test_status_reflects_running_and_attention(ctx):
+    ctx.deps.runner.running = True
+    assert ctx.client.get("/api/status").json()["state"] == "running"
+    ctx.deps.runner.running = False
+    run = ctx.deps.runs.start(Trigger.SCHEDULE, now=5.0)
+    run.status, run.finished_at, run.error = RunStatus.NEEDS_ATTENTION, 6.0, "Facebook session is not logged in"
+    ctx.deps.runs.finish(run)
+    s = ctx.client.get("/api/status").json()
+    assert s["state"] == "needs_attention" and "logged in" in s["last_run"]["error"]
+
+
+# --- posts -------------------------------------------------------------------------------
+
+def test_list_posts_by_kind_and_new(ctx):
+    add_post(ctx, "s1", kind="stay", ts=100.0)
+    add_post(ctx, "j1", kind="job", ts=200.0)
+    assert [p["id"] for p in ctx.client.get("/api/posts").json()] == ["j1", "s1"]
+    assert [p["id"] for p in ctx.client.get("/api/posts?kind=stay").json()] == ["s1"]
+    ctx.client.post("/api/posts/seen")
+    assert ctx.client.get("/api/posts?new=true").json() == []
+
+
+def test_post_view_exposes_classification_and_ai(ctx):
+    add_post(ctx, "s1", ai=AiResult(kind="stay", fit_score=90, summary="Ótimo", scam_suspected=False))
+    p = ctx.client.get("/api/posts").json()[0]
+    assert p["price_week"] == 300 and p["suburb"] == "Rosebery" and p["photos"] == ["http://i/1.jpg"]
+    assert p["ai"]["fit_score"] == 90 and p["ai_status"] == "done" and p["is_new"] is True
+
+
+def test_ai_marking_post_as_other_hides_it(ctx):
+    add_post(ctx, "s1", ai=AiResult(kind="other"))
+    add_post(ctx, "s2")
+    assert [p["id"] for p in ctx.client.get("/api/posts").json()] == ["s2"]
+
+
+def test_patch_post_user_status(ctx):
+    add_post(ctx, "s1")
+    assert ctx.client.patch("/api/posts/s1", json={"user_status": "fav"}).json()["user_status"] == "fav"
+    assert ctx.client.patch("/api/posts/s1", json={"user_status": "bogus"}).status_code == 422
+    assert ctx.client.patch("/api/posts/nope", json={"user_status": "fav"}).status_code == 404
+
+
+# --- security & static -------------------------------------------------------------------
+
+def test_dashboard_is_served_at_root(ctx):
+    r = ctx.client.get("/")
+    assert r.status_code == 200 and "dashboard" in r.text
+
+
+def test_foreign_host_header_is_rejected(ctx):
+    assert ctx.client.get("/api/groups", headers={"Host": "evil.example.com"}).status_code == 403
+
+
+def test_cross_origin_mutation_is_rejected(ctx):
+    r = ctx.client.post("/api/runs", headers={"Origin": "https://evil.example.com"})
+    assert r.status_code == 403 and ctx.deps.runner.calls == []
+
+
+def test_same_origin_mutation_is_allowed(ctx):
+    r = ctx.client.post("/api/runs", headers={"Origin": f"http://{HOST}"})
+    assert r.status_code == 202
+
+
+def test_tailored_cv_endpoint_allowlist(tmp_path, ctx):
+    cv_dir = tmp_path / "output"
+    cv_dir.mkdir()
+    (cv_dir / "CV_Test.pdf").write_bytes(b"%PDF-1.4\n")
+    (cv_dir / "secret.txt").write_text("nope", encoding="utf-8")
+    ctx.deps.cv_dir = cv_dir
+    app = create_app(ctx.deps)
+    client = TestClient(app, base_url=f"http://{HOST}")
+    assert client.get("/api/cv/CV_Test.pdf").status_code == 200
+    assert client.get("/api/cv/secret.txt").status_code == 404
+    assert client.get("/api/cv/..%2Fsecret.txt").status_code == 404
+    assert client.get("/api/cv/missing.pdf").status_code == 404
+
+
+def test_jobs_only_mode_blocks_facebook_routes_and_exposes_jobs_health(ctx):
+    ctx.deps.jobs_only = True
+    ctx.deps.jobs_health_fn = lambda: {"mode": "jobs_only", "scheduler_active": False}
+    ctx.deps.jobs_runner_fn = lambda: {"status": "ok"}
+    ctx.deps.jobs_running_fn = lambda: False
+    client = TestClient(create_app(ctx.deps), base_url=f"http://{HOST}")
+    assert client.get("/api/jobs/health").json()["mode"] == "jobs_only"
+    assert client.post("/api/jobs/runs").status_code == 202
+    assert client.post("/api/runs").status_code == 409
+    assert client.post("/api/groups", json={"url": GROUP}).status_code == 409
+    assert client.post("/api/posts/seen").status_code == 409

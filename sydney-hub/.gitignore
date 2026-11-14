@@ -1,0 +1,12 @@
+data/
+__pycache__/
+.pytest_cache/
+*.pyc
+config/settings.yml
+config/jobs.yml
+config/source_policies.yml
+config/published_boards.yml
+web/seed/jobs.json
+web/seed/listings.json
+web/index.html
+web/inspect_titles.py

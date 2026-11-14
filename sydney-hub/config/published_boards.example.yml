@@ -1,0 +1,12 @@
+# Add only boards linked from an employer's own career page with verified provenance.
+# Revalidate before each manual run. Approval stays fail-closed in config/source_policies.yml.
+# Excluded from official seed manifest: Hometime (Employment Hero, unsupported) and HelloFresh (unconfirmed GH link).
+boards:
+  - company: THE ICONIC
+    board_url: https://job-boards.greenhouse.io/theiconic
+    referrer_url: https://www.theiconic.com.au/playbook/careers
+    checked_at: "2026-11-14"
+    provider_id: greenhouse
+    discovery_origin: employer_careers_page
+    evidence_ref: "https://www.theiconic.com.au/playbook/careers (Open Roles -> https://boards.greenhouse.io/theiconic -> canonical https://job-boards.greenhouse.io/theiconic; also https://www.theiconic.com.au/playbook/people-culture/)"
+    verified_at: "2026-11-14T00:00:00+11:00"

@@ -1,0 +1,77 @@
+# Persisted fail-closed source policy registry for SydneyStays Published Jobs.
+# Copy to config/source_policies.yml (gitignored). All sources default to publish_allowed: false
+# until an operator explicitly records terms review, attribution, and cost_cap_aud: 0.0.
+# ATS authorization MUST be per individual board (ats:<provider>:<slug>), never provider-wide.
+
+sources:
+  workable:
+    publish_allowed: false
+    eval_only: false
+    attribution: Jobs by Workable
+    terms_url: https://help.workable.com/hc/en-us/articles/4420464031767-Utilizing-the-XML-Job-Feed
+    terms_reviewed_at: null
+    access_method: public_xml_feed
+    retention_days: 30
+    url_alteration_allowed: false
+    cost_cap_aud: 0.0
+    max_requests: 1
+    notes: "Hourly XML feed (measured 139.94 MiB gzip / 834.27 MiB XML); preserve <url> verbatim; obey Cloudflare HTTP 429 Retry-After strictly."
+
+  ats:greenhouse:example:
+    publish_allowed: false
+    eval_only: false
+    attribution: Official Employer Career Board (Greenhouse)
+    terms_url: null
+    terms_reviewed_at: null
+    cost_cap_aud: 0.0
+    max_requests: 25
+
+  ats:greenhouse:theiconic:
+    publish_allowed: false
+    eval_only: false
+    attribution: "Official Employer Career Board (THE ICONIC via Greenhouse)"
+    terms_url: null
+    terms_reviewed_at: null
+    access_method: public_board_api
+    retention_days: 30
+    cost_cap_aud: 0.0
+    max_requests: 25
+    notes: "Sonda verified referrer https://www.theiconic.com.au/playbook/careers -> https://boards.greenhouse.io/theiconic -> https://job-boards.greenhouse.io/theiconic (2026-11-14); stays disabled until individual board policy approval + pilot audit."
+
+  ats:lever:example:
+    publish_allowed: false
+    eval_only: false
+    attribution: Official Employer Career Board (Lever)
+    terms_url: null
+    terms_reviewed_at: null
+    cost_cap_aud: 0.0
+    max_requests: 25
+
+  ats:ashby:example:
+    publish_allowed: false
+    eval_only: false
+    attribution: Official Employer Career Board (Ashby)
+    terms_url: null
+    terms_reviewed_at: null
+    cost_cap_aud: 0.0
+    max_requests: 25
+
+  tfnsw:
+    publish_allowed: false
+    eval_only: false
+    attribution: Transport for NSW Open Data (Stop Finder & Trip Planner)
+    terms_url: https://opendata.transport.nsw.gov.au/data/dataset/trip-planner-apis
+    terms_reviewed_at: null
+    cost_cap_aud: 0.0
+    max_requests: 200
+    notes: "Bronze free tier: 60,000 calls/day, 5 req/s; requires TFNSW_API_KEY + TFNSW_FREE_QUOTA_CONFIRMED=1."
+
+  adzuna_au:
+    publish_allowed: false
+    eval_only: true
+    attribution: Adzuna Australia
+    terms_url: https://developer.adzuna.com/
+    terms_reviewed_at: null
+    cost_cap_aud: 0.0
+    max_requests: 10
+    notes: "Evaluation only (--evaluate-adzuna + ADZUNA_FREE_QUOTA_CONFIRMED=1). Catalog insertion unconditionally blocked without confirmed commercial/publication license."

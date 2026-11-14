@@ -1,0 +1,27 @@
+# Isolated local configuration for the SydneyStays Published Jobs service.
+# Copy to config/jobs.yml (gitignored) for local execution. Never bind outside localhost.
+
+server:
+  host: 127.0.0.1
+  port: 8796
+
+paths:
+  db: data/jobs_isolated/jobs_hub.db
+  web: web
+
+published_jobs:
+  db_path: data/jobs_isolated/jobs_hub.db
+  isolated_db_dir: data/jobs_isolated
+  policies_path: config/source_policies.yml
+  boards_path: config/published_boards.yml
+  state_dir: data/published-state
+  reports_dir: data/pilot-reports
+  max_verifications: 30
+  workable_enabled: true
+  workable_cooldown_seconds: 3600
+  workable_min_interval_hours: 20
+  geocode_street_addresses: false
+  origin_label: Rockdale Station
+  scheduler_enabled: false
+  schedule: []
+  adzuna_evaluate_only: true

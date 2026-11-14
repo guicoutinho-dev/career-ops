@@ -1,0 +1,20 @@
+schedule: ["08:00", "14:00", "20:00"]
+scrape:
+  portal: "Facebook"
+  script_path: "../.agents/skills/facebook-groups-scrape-posts/scripts/scrape-posts.py"
+  posts_per_group: 40
+  delay_seconds: [2, 5]
+ai:
+  agent: ""
+  batch_size: 15
+server:
+  host: "127.0.0.1"
+  port: 8765
+paths:
+  db: "data/hub.db"
+  web: "web"
+seed_groups: []
+employer_discovery:
+  enabled: false
+  provider: osm_overpass
+  max_requests: 80

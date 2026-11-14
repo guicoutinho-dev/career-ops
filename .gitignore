@@ -118,6 +118,13 @@ plan/
 # Web
 .career-ops-web/logo-cache/
 
+# Local scratch, temporary files and python caches
+scratch/
+tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+
 # Added by career-ops update-system.mjs.
 # System-owned ignore rules that were missing from this file. Your own rules
 # are never modified, reordered or removed: the updater only appends patterns
@@ -319,3 +326,10 @@ data/interview-prep/
 .next/
 web/.next/
 web/out/
+
+# SydneyStays credential & preview isolation
+config/gmail_*
+config/gmail_credentials.json
+config/gmail_token.json
+config/gmail_auth_url.txt
+sydney-hub/data/preview/
